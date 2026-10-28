@@ -198,7 +198,7 @@ bun test               # unit tests, plus DOM tests under happy-dom
 bun run typecheck      # tsc --noEmit, kept clean and enforced in CI
 ```
 
-`bun run icons`、`bun run flags` 和 `bun run locales` 會重新產生已提交的檔案，且不會在建置時執行。推送 `vX.Y.Z.N` 標籤即可發布版本：CI 會拒絕與 `package.json` 不一致的標籤，建置擴充功能，並附上 zip 檔。
+`bun run icons`、`bun run flags` 和 `bun run locales` 會重新產生已提交的檔案，且不會在建置時執行。推送 `vX.Y.Z.N` 標籤即可發布版本：CI 會拒絕與 `package.json` 不一致，或沒有對應說明檔 `.github/release-notes/vX.Y.Z.N.md`（上方英文、下方繁體中文）的標籤，接著建置擴充功能，並附上 zip 檔。
 
 ## 參與貢獻
 

@@ -16,8 +16,18 @@ jobs:
       # Actions are pinned to a commit SHA: a moving tag would let an upstream
       # compromise run arbitrary code in a job that can write releases.
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-        with:
-          fetch-depth: 0 # the changelog step walks back to the previous tag
+
+      # The notes are written by hand, English then Traditional Chinese, one
+      # file per version. A commit list would also pick up the original
+      # project's commits, since this fork inherits its tags. Checked first so
+      # a release without notes fails before anything is built.
+      - name: Check the release notes exist
+        run: |
+          NOTES=".github/release-notes/${GITHUB_REF_NAME}.md"
+          if [ ! -s "$NOTES" ]; then
+            echo "Missing $NOTES: write the release notes before tagging" >&2
+            exit 1
+          fi
 
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
 
@@ -53,24 +63,9 @@ jobs:
       - name: Zip Chrome
         run: bun run zip
 
-      - name: Generate changelog
-        id: changelog
-        run: |
-          PREV_TAG=$(git tag --sort=-version:refname | grep -v "^${GITHUB_REF_NAME}$" | head -1)
-          if [ -z "$PREV_TAG" ]; then
-            LOG=$(git log --pretty=format:"- %s" HEAD)
-          else
-            LOG=$(git log --pretty=format:"- %s" "${PREV_TAG}..HEAD")
-          fi
-          {
-            echo "NOTES<<PRICEHOVER_EOF"
-            echo "$LOG"
-            echo "PRICEHOVER_EOF"
-          } >> "$GITHUB_OUTPUT"
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
-          body: ${{ steps.changelog.outputs.NOTES }}
+          body_path: .github/release-notes/${{ github.ref_name }}.md
           files: |
             .output/*-chrome.zip

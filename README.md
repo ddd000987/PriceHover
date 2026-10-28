@@ -240,8 +240,9 @@ bun run typecheck      # tsc --noEmit, kept clean and enforced in CI
 
 `bun run icons`, `bun run flags` and `bun run locales` regenerate committed
 files and never run at build time. A release is cut by pushing a `vX.Y.Z.N` tag:
-CI refuses a tag that disagrees with `package.json`, builds the extension and
-attaches the zip.
+CI refuses a tag that disagrees with `package.json` or has no notes in
+`.github/release-notes/vX.Y.Z.N.md` (English, then Traditional Chinese), builds
+the extension and attaches the zip.
 
 ## Contributing
 
