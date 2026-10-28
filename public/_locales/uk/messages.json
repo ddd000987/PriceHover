@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Наведіть курсор на будь-яку ціну на будь-якій сторінці, щоб побачити її у своїй валюті."
+  },
+  "searchPlaceholder": {
+    "message": "Пошук або введення ціни…"
+  },
+  "searchLabel": {
+    "message": "Пошук валют"
+  },
+  "noResults": {
+    "message": "Нічого не знайдено"
+  },
+  "baseCurrency": {
+    "message": "Ваша валюта"
+  },
+  "baseCurrencyHelp": {
+    "message": "Ціни, які вже в цій валюті, не змінюються."
+  },
+  "convertTo": {
+    "message": "Конвертувати в"
+  },
+  "convertToHelp": {
+    "message": "Показуються в підказці під вашою валютою."
+  },
+  "settings": {
+    "message": "Налаштування"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin та інші криптовалюти"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Додає 24 активи. Курси з api.coingecko.com, запит щогодини й лише поки опцію ввімкнено."
+  },
+  "cryptoDenied": {
+    "message": "Без доступу до api.coingecko.com криптовалюти залишаються вимкненими."
+  },
+  "ratesUpdated": {
+    "message": "Курси $1"
+  },
+  "ratesNever": {
+    "message": "Курси не завантажено"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Крипто $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Курси крипто не завантажено"
+  },
+  "ratesStale": {
+    "message": "Курси могли застаріти"
+  },
+  "refresh": {
+    "message": "Оновити"
+  },
+  "refreshing": {
+    "message": "Оновлення…"
+  },
+  "refreshFailed": {
+    "message": "Не вдалося оновити"
+  },
+  "saveFailed": {
+    "message": "Не вдалося зберегти зміну."
+  },
+  "loadFailed": {
+    "message": "Не вдалося прочитати ваші налаштування, тому нічого не буде збережено. Спробуйте ще раз трохи згодом."
+  },
+  "timeJustNow": {
+    "message": "щойно"
+  },
+  "timeMinutes": {
+    "message": "$1 хв тому"
+  },
+  "timeHours": {
+    "message": "$1 год тому"
+  },
+  "timeDays": {
+    "message": "$1 дн. тому"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Валюти не вибрано"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Відкрити налаштування"
+  },
+  "tooltipInferred": {
+    "message": "Валюту визначено за сайтом, а не за ціною"
+  },
+  "tooltipCopyHint": {
+    "message": "Натисніть, щоб скопіювати"
+  },
+  "tooltipCopied": {
+    "message": "Скопійовано"
+  },
+  "extensionOff": {
+    "message": "PriceHover вимкнено"
+  },
+  "turnOn": {
+    "message": "Увімкнути"
+  },
+  "pauseOnSite": {
+    "message": "Призупинити на $1"
+  },
+  "resumeOnSite": {
+    "message": "Відновити на $1"
+  },
+  "pausedOnSite": {
+    "message": "Призупинено на $1"
+  },
+  "optionsTitle": {
+    "message": "Налаштування PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "Валюти"
+  },
+  "sectionBehaviour": {
+    "message": "Поведінка"
+  },
+  "sectionSites": {
+    "message": "Сайти"
+  },
+  "sectionAbout": {
+    "message": "Про розширення"
+  },
+  "hoverDelay": {
+    "message": "Затримка при наведенні"
+  },
+  "hoverDelayHelp": {
+    "message": "Скільки курсор має стояти на місці, перш ніж з’явиться підказка. Чим довше, тим менше випадкових блимань."
+  },
+  "delayInstant": {
+    "message": "Одразу"
+  },
+  "rounding": {
+    "message": "Округлення"
+  },
+  "roundingHelp": {
+    "message": "Перерахована ціна — лише оцінка. Менше цифр — чесніше."
+  },
+  "roundingExact": {
+    "message": "Точно"
+  },
+  "roundingSmart": {
+    "message": "Розумне"
+  },
+  "roundingInteger": {
+    "message": "Цілі числа"
+  },
+  "inlineMode": {
+    "message": "Замінювати ціни на сторінці"
+  },
+  "inlineModeHelp": {
+    "message": "Ваша валюта поруч із кожною ціною, наводити курсор не потрібно. Під час наведення, як і раніше, відкривається список."
+  },
+  "inlineStyle": {
+    "message": "На сторінці показувати"
+  },
+  "inlineStyleHelp": {
+    "message": "Під час заміни ціна сайту ховається, але не видаляється. Під час наведення вона знову видима."
+  },
+  "inlineStyleBadge": {
+    "message": "Обидві ціни"
+  },
+  "inlineStyleReplace": {
+    "message": "Лише мою"
+  },
+  "pageContext": {
+    "message": "Визначати $$, kr і ¥ за сайтом"
+  },
+  "pageContextHelp": {
+    "message": "На .ca $$ — канадський долар. Рядку таблиці чи сторінці, де вказано валюту (CNY, CAD), вірять, а сторінка запам’ятовується для сайту. Якщо вимкнено, діють лише ваші закріплення."
+  },
+  "enabledEverywhere": {
+    "message": "Увімкнено"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Якщо вимкнено, PriceHover нічого не робить на жодній сторінці."
+  },
+  "pausedSites": {
+    "message": "Призупинені сайти"
+  },
+  "pausedSitesEmpty": {
+    "message": "Немає призупинених сайтів."
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "Додати"
+  },
+  "remove": {
+    "message": "Вилучити"
+  },
+  "moveUp": {
+    "message": "Перемістити вгору"
+  },
+  "moveDown": {
+    "message": "Перемістити вниз"
+  },
+  "invalidSite": {
+    "message": "Це не адреса сайту. Спробуйте example.com."
+  },
+  "siteAction": {
+    "message": "На цьому сайті"
+  },
+  "siteActionPause": {
+    "message": "Пауза"
+  },
+  "siteActionLock": {
+    "message": "Закріпити валюту"
+  },
+  "siteLockCurrency": {
+    "message": "Валюта для $$, kr або ¥"
+  },
+  "lockedSites": {
+    "message": "Закріплені валюти"
+  },
+  "lockedSitesHelp": {
+    "message": "На цих сайтах символ завжди означає вибрану вами валюту, що б не підказувала сторінка."
+  },
+  "lockedSitesEmpty": {
+    "message": "Немає закріплених валют."
+  },
+  "learnedSites": {
+    "message": "Зчитано із сайтів"
+  },
+  "learnedSitesHelp": {
+    "message": "Валюта, яку вказують сторінки сайту; зберігається лише на цьому пристрої. Домен і ваші закріплення мають пріоритет."
+  },
+  "learnedSitesEmpty": {
+    "message": "Поки нічого не зчитано."
+  },
+  "reset": {
+    "message": "Скинути налаштування"
+  },
+  "resetWarning": {
+    "message": "Буде видалено всі налаштування, зокрема призупинені сайти, закріплені валюти й те, що розширення дізналося від сайтів. Скасувати це неможливо."
+  },
+  "resetConfirm": {
+    "message": "Підтвердити скидання"
+  },
+  "resetCancel": {
+    "message": "Скасувати"
+  },
+  "version": {
+    "message": "Версія $1"
+  },
+  "privacyPolicy": {
+    "message": "Політика конфіденційності"
+  },
+  "privacyNote": {
+    "message": "Один хост для курсів — open.er-api.com. Те, що ви переглядаєте, не залишає браузер."
+  },
+  "sectionLanguage": {
+    "message": "Мова"
+  },
+  "uiLanguage": {
+    "message": "Мова інтерфейсу"
+  },
+  "uiLanguageHelp": {
+    "message": "Числа також записуються за її правилами. Меню самого браузера залишаються мовою браузера."
+  },
+  "uiLanguageAuto": {
+    "message": "Мова браузера"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (імпорт)"
+  },
+  "languageFilesHelp": {
+    "message": "Експортуйте мову у файл JSON, перекладіть його та імпортуйте сюди. Неперекладені тексти залишаються англійською."
+  },
+  "languageExport": {
+    "message": "Експорт: $1"
+  },
+  "languageImport": {
+    "message": "Імпорт…"
+  },
+  "importedLanguages": {
+    "message": "Імпортовані мови"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Немає імпортованих мов"
+  },
+  "languageProgress": {
+    "message": "Текстів: $1 з $2"
+  },
+  "languageImportDone": {
+    "message": "Імпорт $1: перекладено текстів: $2 з $3."
+  },
+  "languageImportIgnored": {
+    "message": "Пропущено невідомих текстів: $1."
+  },
+  "languageImportPlaceholders": {
+    "message": "Бракує заповнювача, тому значення не відобразиться: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Це не мовний файл PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Файл завеликий."
+  },
+  "languageReplaceConfirm": {
+    "message": "Мову $1 уже імпортовано. Замінити її?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover готовий до роботи"
+  },
+  "welcomeBody": {
+    "message": "Виберіть свою валюту та наведіть курсор на ціну."
+  },
+  "welcomeDismiss": {
+    "message": "Зрозуміло"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover поки не може читати сторінки"
+  },
+  "pageAccessBody": {
+    "message": "Браузер не надає доступу до сайтів, які ви відвідуєте, тому ціни ніде не визначаються. Надайте доступ і перезавантажте вже відкриті вкладки."
+  },
+  "pageAccessGrant": {
+    "message": "Дозволити на всіх сайтах"
+  }
+}

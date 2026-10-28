@@ -56,3 +56,12 @@ describe('crypto is just another column in the rate table', () => {
     expect(rows.map((r) => r.currency.code)).toEqual(['USD', 'BTC', 'DOGE']);
   });
 });
+
+describe('a price in one of the targets', () => {
+  // The content script now opens the tooltip for these too, and relies on this
+  // to keep the price's own currency from showing up as a row of its own.
+  test('converts into the base and the other targets, never into itself', () => {
+    const rows = convertPrice(price(10, 'USD'), RATES, ['EUR', 'USD', 'JPY']);
+    expect(rows.map((r) => r.currency.code)).toEqual(['EUR', 'JPY']);
+  });
+});

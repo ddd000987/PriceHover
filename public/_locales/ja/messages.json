@@ -254,6 +254,57 @@
   "privacyNote": {
     "message": "レート取得先は open.er-api.com のみ。閲覧内容がブラウザーの外に出ることはありません。"
   },
+  "sectionLanguage": {
+    "message": "言語"
+  },
+  "uiLanguage": {
+    "message": "表示言語"
+  },
+  "uiLanguageHelp": {
+    "message": "数値の書式もこの言語に従います。ブラウザー自体のメニューはブラウザーの言語のままです。"
+  },
+  "uiLanguageAuto": {
+    "message": "ブラウザーの言語"
+  },
+  "uiLanguageImported": {
+    "message": "$1（インポート）"
+  },
+  "languageFilesHelp": {
+    "message": "言語を JSON ファイルとして書き出し、翻訳してからここで読み込みます。未翻訳の文は英語のままです。"
+  },
+  "languageExport": {
+    "message": "書き出し：$1"
+  },
+  "languageImport": {
+    "message": "読み込む…"
+  },
+  "importedLanguages": {
+    "message": "読み込んだ言語"
+  },
+  "importedLanguagesEmpty": {
+    "message": "読み込んだ言語はありません"
+  },
+  "languageProgress": {
+    "message": "$2 件中 $1 件"
+  },
+  "languageImportDone": {
+    "message": "$1 を読み込みました（$3 件中 $2 件翻訳済み）。"
+  },
+  "languageImportIgnored": {
+    "message": "不明な $1 件の文を無視しました。"
+  },
+  "languageImportPlaceholders": {
+    "message": "プレースホルダーが欠けているため、値が表示されません：$1"
+  },
+  "languageImportInvalid": {
+    "message": "PriceHover の言語ファイルではありません。"
+  },
+  "languageImportTooLarge": {
+    "message": "ファイルが大きすぎます。"
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 は既に読み込まれています。置き換えますか？"
+  },
   "welcomeTitle": {
     "message": "PriceHover の準備ができました"
   },

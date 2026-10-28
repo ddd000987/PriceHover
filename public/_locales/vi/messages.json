@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Di chuột qua bất kỳ giá nào trên mọi trang để xem giá đó theo tiền tệ của bạn."
+  },
+  "searchPlaceholder": {
+    "message": "Tìm kiếm hoặc nhập giá…"
+  },
+  "searchLabel": {
+    "message": "Tìm tiền tệ"
+  },
+  "noResults": {
+    "message": "Không có kết quả"
+  },
+  "baseCurrency": {
+    "message": "Tiền tệ của bạn"
+  },
+  "baseCurrencyHelp": {
+    "message": "Giá đã ở loại tiền tệ này sẽ được giữ nguyên."
+  },
+  "convertTo": {
+    "message": "Quy đổi sang"
+  },
+  "convertToHelp": {
+    "message": "Hiển thị trong chú giải, bên dưới tiền tệ của bạn."
+  },
+  "settings": {
+    "message": "Cài đặt"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin và tiền mã hóa khác"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Thêm 24 tài sản. Tỷ giá từ api.coingecko.com, kết nối mỗi giờ và chỉ khi tùy chọn này bật."
+  },
+  "cryptoDenied": {
+    "message": "Tiền mã hóa vẫn tắt nếu không có quyền truy cập api.coingecko.com."
+  },
+  "ratesUpdated": {
+    "message": "Tỷ giá $1"
+  },
+  "ratesNever": {
+    "message": "Chưa tải tỷ giá"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Tiền mã hóa $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Chưa tải tỷ giá tiền mã hóa"
+  },
+  "ratesStale": {
+    "message": "Tỷ giá có thể đã cũ"
+  },
+  "refresh": {
+    "message": "Làm mới"
+  },
+  "refreshing": {
+    "message": "Đang làm mới…"
+  },
+  "refreshFailed": {
+    "message": "Làm mới thất bại"
+  },
+  "saveFailed": {
+    "message": "Không thể lưu thay đổi của bạn."
+  },
+  "loadFailed": {
+    "message": "Không thể đọc cài đặt của bạn nên sẽ không lưu gì cả. Hãy thử lại sau giây lát."
+  },
+  "timeJustNow": {
+    "message": "vừa xong"
+  },
+  "timeMinutes": {
+    "message": "$1 phút trước"
+  },
+  "timeHours": {
+    "message": "$1 giờ trước"
+  },
+  "timeDays": {
+    "message": "$1 ngày trước"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Chưa chọn tiền tệ nào"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Mở cài đặt"
+  },
+  "tooltipInferred": {
+    "message": "Tiền tệ được suy ra từ trang web, không phải từ giá"
+  },
+  "tooltipCopyHint": {
+    "message": "Nhấp để sao chép"
+  },
+  "tooltipCopied": {
+    "message": "Đã sao chép"
+  },
+  "extensionOff": {
+    "message": "PriceHover đang tắt"
+  },
+  "turnOn": {
+    "message": "Bật"
+  },
+  "pauseOnSite": {
+    "message": "Tạm dừng trên $1"
+  },
+  "resumeOnSite": {
+    "message": "Tiếp tục trên $1"
+  },
+  "pausedOnSite": {
+    "message": "Đã tạm dừng trên $1"
+  },
+  "optionsTitle": {
+    "message": "Cài đặt PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "Tiền tệ"
+  },
+  "sectionBehaviour": {
+    "message": "Hành vi"
+  },
+  "sectionSites": {
+    "message": "Trang web"
+  },
+  "sectionAbout": {
+    "message": "Giới thiệu"
+  },
+  "hoverDelay": {
+    "message": "Độ trễ khi di chuột"
+  },
+  "hoverDelayHelp": {
+    "message": "Thời gian con trỏ đứng yên trước khi chú giải mở. Càng lâu thì càng ít nhấp nháy."
+  },
+  "delayInstant": {
+    "message": "Tức thì"
+  },
+  "rounding": {
+    "message": "Làm tròn"
+  },
+  "roundingHelp": {
+    "message": "Giá quy đổi chỉ là ước tính. Ít chữ số hơn thể hiện điều đó."
+  },
+  "roundingExact": {
+    "message": "Chính xác"
+  },
+  "roundingSmart": {
+    "message": "Thông minh"
+  },
+  "roundingInteger": {
+    "message": "Số nguyên"
+  },
+  "inlineMode": {
+    "message": "Viết lại giá trên trang"
+  },
+  "inlineModeHelp": {
+    "message": "Tiền tệ của bạn bên cạnh mỗi giá, không cần di chuột. Di chuột vẫn mở danh sách."
+  },
+  "inlineStyle": {
+    "message": "Trên trang, hiển thị"
+  },
+  "inlineStyleHelp": {
+    "message": "Thay thế sẽ ẩn giá của trang web mà không xóa nó. Di chuột sẽ hiện lại."
+  },
+  "inlineStyleBadge": {
+    "message": "Cả hai giá"
+  },
+  "inlineStyleReplace": {
+    "message": "Chỉ giá của tôi"
+  },
+  "pageContext": {
+    "message": "Đọc $$, kr và ¥ theo trang web"
+  },
+  "pageContextHelp": {
+    "message": "Trên .ca, $$ là đô la Canada. Một dòng bảng hoặc trang nêu rõ tiền tệ (CNY, CAD) sẽ được tin, và trang đó được ghi nhớ cho trang web. Khi tắt, chỉ các khóa của bạn có hiệu lực."
+  },
+  "enabledEverywhere": {
+    "message": "Đã bật"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Tắt nghĩa là PriceHover không làm gì trên bất kỳ trang nào."
+  },
+  "pausedSites": {
+    "message": "Trang web đã tạm dừng"
+  },
+  "pausedSitesEmpty": {
+    "message": "Không có trang web nào bị tạm dừng."
+  },
+  "addSitePlaceholder": {
+    "message": "vidu.com"
+  },
+  "add": {
+    "message": "Thêm"
+  },
+  "remove": {
+    "message": "Xóa"
+  },
+  "moveUp": {
+    "message": "Di chuyển lên"
+  },
+  "moveDown": {
+    "message": "Di chuyển xuống"
+  },
+  "invalidSite": {
+    "message": "Đó không phải địa chỉ trang web. Hãy thử vidu.com."
+  },
+  "siteAction": {
+    "message": "Trên trang web này"
+  },
+  "siteActionPause": {
+    "message": "Tạm dừng"
+  },
+  "siteActionLock": {
+    "message": "Khóa tiền tệ"
+  },
+  "siteLockCurrency": {
+    "message": "Tiền tệ cho $$, kr hoặc ¥"
+  },
+  "lockedSites": {
+    "message": "Tiền tệ đã khóa"
+  },
+  "lockedSitesHelp": {
+    "message": "Trên các trang web này, ký hiệu luôn có nghĩa là tiền tệ bạn đã chọn, bất kể trang gợi ý gì."
+  },
+  "lockedSitesEmpty": {
+    "message": "Không có tiền tệ nào bị khóa."
+  },
+  "learnedSites": {
+    "message": "Đọc từ các trang web"
+  },
+  "learnedSitesHelp": {
+    "message": "Tiền tệ do chính các trang của một trang web nêu, chỉ được ghi nhớ trên thiết bị này. Tên miền và các khóa của bạn được ưu tiên trước."
+  },
+  "learnedSitesEmpty": {
+    "message": "Chưa đọc được gì."
+  },
+  "reset": {
+    "message": "Đặt lại về mặc định"
+  },
+  "resetWarning": {
+    "message": "Thao tác này xóa mọi cài đặt, gồm cả các trang web đã tạm dừng, đã khóa và những gì nó học được từ các trang web. Không thể hoàn tác."
+  },
+  "resetConfirm": {
+    "message": "Xác nhận đặt lại"
+  },
+  "resetCancel": {
+    "message": "Hủy"
+  },
+  "version": {
+    "message": "Phiên bản $1"
+  },
+  "privacyPolicy": {
+    "message": "Chính sách quyền riêng tư"
+  },
+  "privacyNote": {
+    "message": "Chỉ một máy chủ cho tỷ giá, open.er-api.com. Những gì bạn duyệt không bao giờ rời khỏi trình duyệt."
+  },
+  "sectionLanguage": {
+    "message": "Ngôn ngữ"
+  },
+  "uiLanguage": {
+    "message": "Ngôn ngữ giao diện"
+  },
+  "uiLanguageHelp": {
+    "message": "Số cũng được viết theo ngôn ngữ này. Menu của chính trình duyệt vẫn dùng ngôn ngữ của trình duyệt."
+  },
+  "uiLanguageAuto": {
+    "message": "Ngôn ngữ trình duyệt"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (đã nhập)"
+  },
+  "languageFilesHelp": {
+    "message": "Xuất một ngôn ngữ thành tệp JSON, dịch rồi nhập lại tại đây. Văn bản bị bỏ sót vẫn là tiếng Anh."
+  },
+  "languageExport": {
+    "message": "Xuất $1"
+  },
+  "languageImport": {
+    "message": "Nhập…"
+  },
+  "importedLanguages": {
+    "message": "Ngôn ngữ đã nhập"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Chưa nhập ngôn ngữ nào"
+  },
+  "languageProgress": {
+    "message": "$1 trong $2 văn bản"
+  },
+  "languageImportDone": {
+    "message": "Đã nhập $1: đã dịch $2 trong $3 văn bản."
+  },
+  "languageImportIgnored": {
+    "message": "Đã bỏ qua $1 văn bản không xác định."
+  },
+  "languageImportPlaceholders": {
+    "message": "Thiếu một phần giữ chỗ nên một giá trị sẽ không hiển thị: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Đây không phải tệp ngôn ngữ PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Tệp này quá lớn."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 đã được nhập. Thay thế?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover đã sẵn sàng"
+  },
+  "welcomeBody": {
+    "message": "Chọn tiền tệ của bạn, rồi di chuột qua một giá."
+  },
+  "welcomeDismiss": {
+    "message": "Đã hiểu"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover chưa thể đọc các trang"
+  },
+  "pageAccessBody": {
+    "message": "Trình duyệt của bạn đang giữ lại quyền truy cập vào các trang web bạn truy cập nên không phát hiện được giá ở bất kỳ đâu. Hãy cấp quyền, rồi tải lại các tab đang mở."
+  },
+  "pageAccessGrant": {
+    "message": "Cho phép trên mọi trang web"
+  }
+}

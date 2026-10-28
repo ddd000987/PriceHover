@@ -46,7 +46,7 @@
   const cryptoUsable = $derived(settings.cryptoEnabled && cryptoGranted);
 
   onMount(async () => {
-    // The page ships in eight locales, so the document language cannot be a
+    // The UI can be in any language, picked or imported, so the document language cannot be a
     // constant in the HTML.
     document.documentElement.lang = uiLocale();
 

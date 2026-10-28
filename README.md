@@ -1,14 +1,15 @@
+<p align="right"><b>English</b> · <a href="./README.zh-TW.md">繁體中文</a></p>
+
 <h1 align="center">PriceHover</h1>
-<p align="center">Hover any price on any page and read it in your own currency.<br />Chrome and Firefox, MV3, built with WXT and Svelte 5.</p>
+<p align="center">Hover any price on any page and read it in your own currency.<br />Chrome and other Chromium browsers, MV3, built with WXT and Svelte 5.</p>
 
 <p align="center">
-  <a href="https://github.com/klNuno/PriceHover/releases"><img src="https://img.shields.io/github/v/release/klNuno/PriceHover?display_name=tag" alt="Release" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/github/license/klNuno/PriceHover" alt="License" /></a>
-  <a href="https://github.com/klNuno/PriceHover/stargazers"><img src="https://img.shields.io/github/stars/klNuno/PriceHover" alt="Stars" /></a>
-  <a href="#install"><img src="https://img.shields.io/badge/browser-Chrome%20%7C%20Firefox-0078D6" alt="Browser" /></a>
+  <a href="https://github.com/ddd000987/PriceHover/releases"><img src="https://img.shields.io/github/v/release/ddd000987/PriceHover?display_name=tag" alt="Release" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/ddd000987/PriceHover" alt="License" /></a>
+  <a href="https://github.com/ddd000987/PriceHover/stargazers"><img src="https://img.shields.io/github/stars/ddd000987/PriceHover" alt="Stars" /></a>
+  <a href="#install"><img src="https://img.shields.io/badge/browser-Chrome%20%7C%20Edge-0078D6" alt="Browser" /></a>
   <a href="https://wxt.dev/"><img src="https://img.shields.io/badge/WXT-0.20-67D75B" alt="WXT" /></a>
   <a href="https://svelte.dev/"><img src="https://img.shields.io/badge/Svelte-5-FF3E00?logo=svelte" alt="Svelte" /></a>
-  <a href="https://addons.mozilla.org/firefox/addon/pricehover"><img src="https://img.shields.io/amo/v/pricehover?label=Firefox%20Add-ons" alt="Firefox Add-ons" /></a>
 </p>
 
 <p align="center">
@@ -19,6 +20,7 @@
 </p>
 
 <p align="center">
+  <a href="#how-this-fork-differs-from-the-original">Fork changes</a> ·
   <a href="#install">Install</a> ·
   <a href="#what-it-reads">What it reads</a> ·
   <a href="#inline-mode">Inline mode</a> ·
@@ -26,6 +28,52 @@
   <a href="#the-popup-is-also-a-converter">Popup</a> ·
   <a href="#privacy">Privacy</a>
 </p>
+
+## How this fork differs from the original
+
+This is a fork of [klNuno/PriceHover](https://github.com/klNuno/PriceHover).
+Everything else works the way the original does. The changes are the interface
+language, which prices open a tooltip, and the browsers it is built for.
+
+| | Original | This fork |
+|---|---|---|
+| Interface language | Always the browser's language | Pick any language in Settings → **Language**, or keep *Browser language* |
+| Bundled languages | 8: en, fr, es, de, pt_BR, it, ja, zh_CN | 18: the original 8 plus zh_TW, ko, ru, nl, pl, tr, uk, id, vi, th |
+| Adding a language | Edit `scripts/gen-locales.ts` and rebuild | **Export** a language as JSON, translate it, **Import** it back. No build, and it works on an installed extension too |
+| Number format | Follows the browser | Follows the chosen language |
+| Prices that open a tooltip | Only prices in a currency that is neither your own nor in *Convert to* | Every price except those in your own currency. With TWD as yours and USD, JPY in *Convert to*, a US price shows TWD and JPY, and a yen price shows TWD and USD |
+| Browsers | Chrome and Firefox | Chrome, Edge and other Chromium browsers. Firefox is no longer built |
+| Version | `2.2.0` | `2.2.0.1`: the original's version, plus a fourth number for this fork's own releases |
+
+The ten added languages were machine-translated. Corrections from native
+speakers are welcome as issues or pull requests.
+
+What stays with the browser: the extension's name and description in the
+browser's own menus and the toolbar tooltip are read by the browser from the
+manifest, so they keep following the browser's language.
+
+### Language files
+
+Settings → **Language** → **Export** writes the selected language (English when
+*Browser language* is selected) as a file like this:
+
+```json
+{
+  "_meta": { "code": "ko", "name": "한국어", "locale": "ko-KR", "version": "2.2.0" },
+  "messages": {
+    "searchPlaceholder": "검색 또는 가격 입력…",
+    "timeMinutes": "$1분 전"
+  }
+}
+```
+
+- `code` identifies the pack: importing another file with the same code replaces it.
+- `name` is what the language menu shows. `locale` is a BCP-47 tag used for numbers.
+- `$1`, `$2`, `$3` are filled in at runtime and must stay. A translation that
+  drops one is still imported, with a warning naming the key.
+- Keys left out, or left in English, show in English. Unknown keys are ignored.
+  Files over 256 KB are refused.
+- Imported packs live in the extension's local storage, on this device only.
 
 ## Why
 
@@ -47,7 +95,7 @@ request a day for the rates.
 - **Rounding.** `≈€1,235` where `€1,234.56` would pretend to a precision a conversion does not have.
 - **Sub-cent prices stay prices.** A yen is `€0.0061`, not `€0.01`, and never `€0`. Per-unit and prorated prices (`$0.0075`) are read too.
 - **Crypto, if you want it.** 24 assets including BTC, ETH, XMR, USDT, USDC and DOGE. Off by default, one extra host, granted by you and given back when you switch it off.
-- **44 currencies, eight languages.** Flags are bundled, nothing is fetched from a third party.
+- **44 currencies, eighteen languages, and room for yours.** Pick the interface language by hand, or import one. Flags are bundled, nothing is fetched from a third party.
 
 > [!NOTE]
 > 2.0.0 changed how `$` is read. On a country domain it now converts as that
@@ -155,8 +203,9 @@ convert from your own currency. The footer says how old the rates are and refres
 </p>
 
 Your own currency, the list to convert into and its order, hover delay,
-rounding, inline mode, paused sites, locked site currencies, and the currencies
-read from each site.
+rounding, inline mode, paused sites, locked site currencies, the currencies
+read from each site, and the interface language, with import and export of
+language files.
 
 ## Privacy
 
@@ -175,10 +224,9 @@ Full details in the [privacy policy](PRIVACY.md).
 
 ## Install
 
-- **Firefox**: [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/pricehover).
-- **Chrome**: the zip on [Releases](https://github.com/klNuno/PriceHover/releases)
-  loads unpacked from `chrome://extensions` with developer mode on. The Web
-  Store listing is published by hand, so it can trail a tag by a few days.
+- **Chrome / Edge**: unzip the zip from [Releases](https://github.com/ddd000987/PriceHover/releases),
+  then load the folder unpacked from `chrome://extensions` (`edge://extensions`)
+  with developer mode on. This fork is not published to any store.
 
 ## Build from source
 
@@ -186,15 +234,14 @@ Full details in the [privacy policy](PRIVACY.md).
 bun install
 bun run dev            # Chrome, hot reload
 bun run build          # Chrome MV3  -> .output/chrome-mv3
-bun run build:firefox  # Firefox MV3 -> .output/firefox-mv3
 bun test               # unit tests, plus DOM tests under happy-dom
 bun run typecheck      # tsc --noEmit, kept clean and enforced in CI
 ```
 
 `bun run icons`, `bun run flags` and `bun run locales` regenerate committed
-files and never run at build time. A release is cut by pushing a `vX.Y.Z` tag:
-CI refuses a tag that disagrees with `package.json`, builds both targets and
-attaches the zips.
+files and never run at build time. A release is cut by pushing a `vX.Y.Z.N` tag:
+CI refuses a tag that disagrees with `package.json`, builds the extension and
+attaches the zip.
 
 ## Contributing
 
@@ -210,3 +257,8 @@ silent.
 Distributing a modified version, publishing a fork to a browser store included,
 means releasing its source under the same license. Every dependency is
 GPL-compatible, and only Svelte (MIT) ships inside the extension.
+
+This fork was modified by [ddd000987](https://github.com/ddd000987) from
+[klNuno/PriceHover](https://github.com/klNuno/PriceHover) 2.2.0. What changed is
+listed under [How this fork differs from the original](#how-this-fork-differs-from-the-original)
+and in [CHANGELOG.md](CHANGELOG.md).

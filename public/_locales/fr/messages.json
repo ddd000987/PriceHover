@@ -254,6 +254,57 @@
   "privacyNote": {
     "message": "Un seul hôte pour les taux, open.er-api.com. Vos pages ne quittent pas le navigateur."
   },
+  "sectionLanguage": {
+    "message": "Langue"
+  },
+  "uiLanguage": {
+    "message": "Langue de l’interface"
+  },
+  "uiLanguageHelp": {
+    "message": "Les nombres s’écrivent aussi à sa façon. Les menus du navigateur gardent sa langue."
+  },
+  "uiLanguageAuto": {
+    "message": "Langue du navigateur"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (importée)"
+  },
+  "languageFilesHelp": {
+    "message": "Exportez une langue en fichier JSON, traduisez-la, puis importez-la ici. Les textes absents restent en anglais."
+  },
+  "languageExport": {
+    "message": "Exporter : $1"
+  },
+  "languageImport": {
+    "message": "Importer…"
+  },
+  "importedLanguages": {
+    "message": "Langues importées"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Aucune langue importée"
+  },
+  "languageProgress": {
+    "message": "$1 textes sur $2"
+  },
+  "languageImportDone": {
+    "message": "$1 importée : $2 textes traduits sur $3."
+  },
+  "languageImportIgnored": {
+    "message": "$1 textes inconnus ont été ignorés."
+  },
+  "languageImportPlaceholders": {
+    "message": "Il manque un paramètre, une valeur ne s’affichera pas : $1"
+  },
+  "languageImportInvalid": {
+    "message": "Ce n’est pas un fichier de langue PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Ce fichier est trop volumineux."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 est déjà importée. La remplacer ?"
+  },
   "welcomeTitle": {
     "message": "PriceHover est prêt"
   },

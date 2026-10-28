@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Arahkan kursor ke harga di halaman mana pun untuk melihatnya dalam mata uang Anda."
+  },
+  "searchPlaceholder": {
+    "message": "Cari atau ketik harga…"
+  },
+  "searchLabel": {
+    "message": "Cari mata uang"
+  },
+  "noResults": {
+    "message": "Tidak ada hasil"
+  },
+  "baseCurrency": {
+    "message": "Mata uang Anda"
+  },
+  "baseCurrencyHelp": {
+    "message": "Harga yang sudah dalam mata uang ini dibiarkan."
+  },
+  "convertTo": {
+    "message": "Konversi ke"
+  },
+  "convertToHelp": {
+    "message": "Ditampilkan di tooltip, di bawah mata uang Anda."
+  },
+  "settings": {
+    "message": "Setelan"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin dan kripto lain"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Menambah 24 aset. Kurs dari api.coingecko.com, dihubungi tiap jam hanya saat ini aktif."
+  },
+  "cryptoDenied": {
+    "message": "Kripto tetap nonaktif tanpa akses ke api.coingecko.com."
+  },
+  "ratesUpdated": {
+    "message": "Kurs $1"
+  },
+  "ratesNever": {
+    "message": "Kurs belum dimuat"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Kripto $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Kurs kripto belum dimuat"
+  },
+  "ratesStale": {
+    "message": "Kurs mungkin sudah usang"
+  },
+  "refresh": {
+    "message": "Segarkan"
+  },
+  "refreshing": {
+    "message": "Menyegarkan…"
+  },
+  "refreshFailed": {
+    "message": "Gagal menyegarkan"
+  },
+  "saveFailed": {
+    "message": "Perubahan Anda tidak dapat disimpan."
+  },
+  "loadFailed": {
+    "message": "Setelan Anda tidak dapat dibaca, jadi tidak ada yang akan disimpan. Coba lagi sebentar lagi."
+  },
+  "timeJustNow": {
+    "message": "baru saja"
+  },
+  "timeMinutes": {
+    "message": "$1 mnt lalu"
+  },
+  "timeHours": {
+    "message": "$1 j lalu"
+  },
+  "timeDays": {
+    "message": "$1 h lalu"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Belum ada mata uang dipilih"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Buka setelan"
+  },
+  "tooltipInferred": {
+    "message": "Mata uang dibaca dari situs, bukan dari harga"
+  },
+  "tooltipCopyHint": {
+    "message": "Klik untuk menyalin"
+  },
+  "tooltipCopied": {
+    "message": "Disalin"
+  },
+  "extensionOff": {
+    "message": "PriceHover nonaktif"
+  },
+  "turnOn": {
+    "message": "Aktifkan"
+  },
+  "pauseOnSite": {
+    "message": "Jeda di $1"
+  },
+  "resumeOnSite": {
+    "message": "Lanjutkan di $1"
+  },
+  "pausedOnSite": {
+    "message": "Dijeda di $1"
+  },
+  "optionsTitle": {
+    "message": "Setelan PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "Mata uang"
+  },
+  "sectionBehaviour": {
+    "message": "Perilaku"
+  },
+  "sectionSites": {
+    "message": "Situs"
+  },
+  "sectionAbout": {
+    "message": "Tentang"
+  },
+  "hoverDelay": {
+    "message": "Jeda hover"
+  },
+  "hoverDelayHelp": {
+    "message": "Lama penunjuk diam sebelum tooltip muncul. Makin lama, makin sedikit kedipan."
+  },
+  "delayInstant": {
+    "message": "Instan"
+  },
+  "rounding": {
+    "message": "Pembulatan"
+  },
+  "roundingHelp": {
+    "message": "Harga hasil konversi hanyalah perkiraan. Angka yang lebih sedikit menunjukkan hal itu."
+  },
+  "roundingExact": {
+    "message": "Tepat"
+  },
+  "roundingSmart": {
+    "message": "Cerdas"
+  },
+  "roundingInteger": {
+    "message": "Bilangan bulat"
+  },
+  "inlineMode": {
+    "message": "Tulis ulang harga di halaman"
+  },
+  "inlineModeHelp": {
+    "message": "Mata uang Anda di samping setiap harga, tanpa hover. Hover tetap membuka daftar."
+  },
+  "inlineStyle": {
+    "message": "Di halaman, tampilkan"
+  },
+  "inlineStyleHelp": {
+    "message": "Mengganti menyembunyikan harga situs tanpa menghapusnya. Hover menampilkannya lagi."
+  },
+  "inlineStyleBadge": {
+    "message": "Kedua harga"
+  },
+  "inlineStyleReplace": {
+    "message": "Hanya milik saya"
+  },
+  "pageContext": {
+    "message": "Baca $$, kr, dan ¥ dari situs"
+  },
+  "pageContextHelp": {
+    "message": "Di .ca, $$ berarti dolar Kanada. Baris tabel atau halaman yang menyebut mata uangnya (CNY, CAD) dipercaya, dan halaman itu diingat untuk situs. Jika nonaktif, hanya kunci Anda yang berlaku."
+  },
+  "enabledEverywhere": {
+    "message": "Aktif"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Nonaktif berarti PriceHover tidak melakukan apa pun di halaman mana pun."
+  },
+  "pausedSites": {
+    "message": "Situs yang dijeda"
+  },
+  "pausedSitesEmpty": {
+    "message": "Tidak ada situs yang dijeda."
+  },
+  "addSitePlaceholder": {
+    "message": "contoh.com"
+  },
+  "add": {
+    "message": "Tambah"
+  },
+  "remove": {
+    "message": "Hapus"
+  },
+  "moveUp": {
+    "message": "Pindah ke atas"
+  },
+  "moveDown": {
+    "message": "Pindah ke bawah"
+  },
+  "invalidSite": {
+    "message": "Itu bukan alamat situs. Coba contoh.com."
+  },
+  "siteAction": {
+    "message": "Di situs ini"
+  },
+  "siteActionPause": {
+    "message": "Jeda"
+  },
+  "siteActionLock": {
+    "message": "Kunci mata uang"
+  },
+  "siteLockCurrency": {
+    "message": "Mata uang untuk $$, kr atau ¥"
+  },
+  "lockedSites": {
+    "message": "Mata uang terkunci"
+  },
+  "lockedSitesHelp": {
+    "message": "Di situs ini, simbol selalu berarti mata uang yang Anda pilih, apa pun petunjuk halamannya."
+  },
+  "lockedSitesEmpty": {
+    "message": "Tidak ada mata uang yang dikunci."
+  },
+  "learnedSites": {
+    "message": "Dibaca dari situs"
+  },
+  "learnedSitesHelp": {
+    "message": "Mata uang yang disebut halaman situs, diingat hanya di perangkat ini. Domain dan kunci Anda didahulukan."
+  },
+  "learnedSitesEmpty": {
+    "message": "Belum ada yang dibaca."
+  },
+  "reset": {
+    "message": "Kembalikan ke default"
+  },
+  "resetWarning": {
+    "message": "Ini menghapus semua setelan, termasuk situs yang dijeda dan dikunci serta apa yang dipelajari dari situs. Tindakan ini tidak dapat dibatalkan."
+  },
+  "resetConfirm": {
+    "message": "Konfirmasi reset"
+  },
+  "resetCancel": {
+    "message": "Batal"
+  },
+  "version": {
+    "message": "Versi $1"
+  },
+  "privacyPolicy": {
+    "message": "Kebijakan privasi"
+  },
+  "privacyNote": {
+    "message": "Satu host untuk kurs, open.er-api.com. Apa yang Anda telusuri tidak pernah keluar dari browser Anda."
+  },
+  "sectionLanguage": {
+    "message": "Bahasa"
+  },
+  "uiLanguage": {
+    "message": "Bahasa antarmuka"
+  },
+  "uiLanguageHelp": {
+    "message": "Angka juga ditulis menurut bahasa ini. Menu browser tetap memakai bahasa browser."
+  },
+  "uiLanguageAuto": {
+    "message": "Bahasa browser"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (diimpor)"
+  },
+  "languageFilesHelp": {
+    "message": "Ekspor bahasa sebagai file JSON, terjemahkan, lalu impor di sini. Teks yang dilewati tetap dalam bahasa Inggris."
+  },
+  "languageExport": {
+    "message": "Ekspor $1"
+  },
+  "languageImport": {
+    "message": "Impor…"
+  },
+  "importedLanguages": {
+    "message": "Bahasa yang diimpor"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Tidak ada bahasa yang diimpor"
+  },
+  "languageProgress": {
+    "message": "$1 dari $2 teks"
+  },
+  "languageImportDone": {
+    "message": "$1 diimpor: $2 dari $3 teks diterjemahkan."
+  },
+  "languageImportIgnored": {
+    "message": "$1 teks tidak dikenal diabaikan."
+  },
+  "languageImportPlaceholders": {
+    "message": "Placeholder hilang, sehingga satu nilai tidak akan tampil: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Ini bukan file bahasa PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "File ini terlalu besar."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 sudah diimpor. Ganti?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover siap"
+  },
+  "welcomeBody": {
+    "message": "Pilih mata uang Anda, lalu arahkan kursor ke harga."
+  },
+  "welcomeDismiss": {
+    "message": "Mengerti"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover belum dapat membaca halaman"
+  },
+  "pageAccessBody": {
+    "message": "Browser Anda menahan akses ke situs yang Anda kunjungi, jadi tidak ada harga yang terdeteksi di mana pun. Berikan akses, lalu muat ulang tab yang sudah terbuka."
+  },
+  "pageAccessGrant": {
+    "message": "Izinkan di semua situs"
+  }
+}

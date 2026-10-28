@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Наведите курсор на любую цену на любой странице, чтобы увидеть её в своей валюте."
+  },
+  "searchPlaceholder": {
+    "message": "Поиск или ввод цены…"
+  },
+  "searchLabel": {
+    "message": "Поиск валют"
+  },
+  "noResults": {
+    "message": "Ничего не найдено"
+  },
+  "baseCurrency": {
+    "message": "Ваша валюта"
+  },
+  "baseCurrencyHelp": {
+    "message": "Цены, уже указанные в этой валюте, не затрагиваются."
+  },
+  "convertTo": {
+    "message": "Конвертировать в"
+  },
+  "convertToHelp": {
+    "message": "Показываются во всплывающей подсказке под вашей валютой."
+  },
+  "settings": {
+    "message": "Настройки"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin и другие криптовалюты"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Добавляет 24 актива. Курсы с api.coingecko.com, запрос раз в час и только пока опция включена."
+  },
+  "cryptoDenied": {
+    "message": "Без доступа к api.coingecko.com криптовалюты остаются выключенными."
+  },
+  "ratesUpdated": {
+    "message": "Курсы $1"
+  },
+  "ratesNever": {
+    "message": "Курсы не загружены"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Крипто $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Курсы крипто не загружены"
+  },
+  "ratesStale": {
+    "message": "Курсы могли устареть"
+  },
+  "refresh": {
+    "message": "Обновить"
+  },
+  "refreshing": {
+    "message": "Обновление…"
+  },
+  "refreshFailed": {
+    "message": "Не удалось обновить"
+  },
+  "saveFailed": {
+    "message": "Не удалось сохранить изменение."
+  },
+  "loadFailed": {
+    "message": "Не удалось прочитать ваши настройки, поэтому ничего не будет сохранено. Повторите попытку чуть позже."
+  },
+  "timeJustNow": {
+    "message": "только что"
+  },
+  "timeMinutes": {
+    "message": "$1 мин назад"
+  },
+  "timeHours": {
+    "message": "$1 ч назад"
+  },
+  "timeDays": {
+    "message": "$1 д назад"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Валюты не выбраны"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Открыть настройки"
+  },
+  "tooltipInferred": {
+    "message": "Валюта определена по сайту, а не по цене"
+  },
+  "tooltipCopyHint": {
+    "message": "Нажмите, чтобы скопировать"
+  },
+  "tooltipCopied": {
+    "message": "Скопировано"
+  },
+  "extensionOff": {
+    "message": "PriceHover выключен"
+  },
+  "turnOn": {
+    "message": "Включить"
+  },
+  "pauseOnSite": {
+    "message": "Приостановить на $1"
+  },
+  "resumeOnSite": {
+    "message": "Возобновить на $1"
+  },
+  "pausedOnSite": {
+    "message": "Приостановлено на $1"
+  },
+  "optionsTitle": {
+    "message": "Настройки PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "Валюты"
+  },
+  "sectionBehaviour": {
+    "message": "Поведение"
+  },
+  "sectionSites": {
+    "message": "Сайты"
+  },
+  "sectionAbout": {
+    "message": "О расширении"
+  },
+  "hoverDelay": {
+    "message": "Задержка при наведении"
+  },
+  "hoverDelayHelp": {
+    "message": "Сколько курсор должен стоять на месте, прежде чем появится подсказка. Чем дольше, тем меньше случайных миганий."
+  },
+  "delayInstant": {
+    "message": "Сразу"
+  },
+  "rounding": {
+    "message": "Округление"
+  },
+  "roundingHelp": {
+    "message": "Пересчитанная цена — лишь оценка. Меньше цифр — честнее."
+  },
+  "roundingExact": {
+    "message": "Точно"
+  },
+  "roundingSmart": {
+    "message": "Умное"
+  },
+  "roundingInteger": {
+    "message": "Целые числа"
+  },
+  "inlineMode": {
+    "message": "Заменять цены на странице"
+  },
+  "inlineModeHelp": {
+    "message": "Ваша валюта рядом с каждой ценой, наводить курсор не нужно. При наведении по-прежнему открывается список."
+  },
+  "inlineStyle": {
+    "message": "На странице показывать"
+  },
+  "inlineStyleHelp": {
+    "message": "При замене цена сайта скрывается, но не удаляется. При наведении она снова видна."
+  },
+  "inlineStyleBadge": {
+    "message": "Обе цены"
+  },
+  "inlineStyleReplace": {
+    "message": "Только мою"
+  },
+  "pageContext": {
+    "message": "Определять $$, kr и ¥ по сайту"
+  },
+  "pageContextHelp": {
+    "message": "На .ca $$ — канадский доллар. Строке таблицы или странице, где указана валюта (CNY, CAD), верят, а страница запоминается для сайта. Если выключено, действуют только ваши закрепления."
+  },
+  "enabledEverywhere": {
+    "message": "Включено"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Если выключено, PriceHover ничего не делает ни на одной странице."
+  },
+  "pausedSites": {
+    "message": "Сайты на паузе"
+  },
+  "pausedSitesEmpty": {
+    "message": "Нет сайтов на паузе."
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "Добавить"
+  },
+  "remove": {
+    "message": "Удалить"
+  },
+  "moveUp": {
+    "message": "Переместить вверх"
+  },
+  "moveDown": {
+    "message": "Переместить вниз"
+  },
+  "invalidSite": {
+    "message": "Это не адрес сайта. Попробуйте example.com."
+  },
+  "siteAction": {
+    "message": "На этом сайте"
+  },
+  "siteActionPause": {
+    "message": "Пауза"
+  },
+  "siteActionLock": {
+    "message": "Закрепить валюту"
+  },
+  "siteLockCurrency": {
+    "message": "Валюта для $$, kr или ¥"
+  },
+  "lockedSites": {
+    "message": "Закреплённые валюты"
+  },
+  "lockedSitesHelp": {
+    "message": "На этих сайтах символ всегда означает выбранную вами валюту, что бы ни подсказывала страница."
+  },
+  "lockedSitesEmpty": {
+    "message": "Нет закреплённых валют."
+  },
+  "learnedSites": {
+    "message": "Считано с сайтов"
+  },
+  "learnedSitesHelp": {
+    "message": "Валюта, указанная на страницах сайта; хранится только на этом устройстве. Домен и ваши закрепления имеют приоритет."
+  },
+  "learnedSitesEmpty": {
+    "message": "Пока ничего не считано."
+  },
+  "reset": {
+    "message": "Сбросить настройки"
+  },
+  "resetWarning": {
+    "message": "Будут удалены все настройки, включая сайты на паузе, закреплённые валюты и то, что расширение узнало от сайтов. Отменить это нельзя."
+  },
+  "resetConfirm": {
+    "message": "Подтвердить сброс"
+  },
+  "resetCancel": {
+    "message": "Отмена"
+  },
+  "version": {
+    "message": "Версия $1"
+  },
+  "privacyPolicy": {
+    "message": "Политика конфиденциальности"
+  },
+  "privacyNote": {
+    "message": "Один хост для курсов — open.er-api.com. То, что вы просматриваете, не покидает браузер."
+  },
+  "sectionLanguage": {
+    "message": "Язык"
+  },
+  "uiLanguage": {
+    "message": "Язык интерфейса"
+  },
+  "uiLanguageHelp": {
+    "message": "Числа тоже записываются по его правилам. Меню самого браузера остаются на языке браузера."
+  },
+  "uiLanguageAuto": {
+    "message": "Язык браузера"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (импорт)"
+  },
+  "languageFilesHelp": {
+    "message": "Экспортируйте язык в файл JSON, переведите его и импортируйте сюда. Непереведённые тексты остаются на английском."
+  },
+  "languageExport": {
+    "message": "Экспорт: $1"
+  },
+  "languageImport": {
+    "message": "Импорт…"
+  },
+  "importedLanguages": {
+    "message": "Импортированные языки"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Нет импортированных языков"
+  },
+  "languageProgress": {
+    "message": "Текстов: $1 из $2"
+  },
+  "languageImportDone": {
+    "message": "Импорт $1: переведено текстов: $2 из $3."
+  },
+  "languageImportIgnored": {
+    "message": "Пропущено неизвестных текстов: $1."
+  },
+  "languageImportPlaceholders": {
+    "message": "Не хватает заполнителя, поэтому значение не отобразится: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Это не языковой файл PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Файл слишком большой."
+  },
+  "languageReplaceConfirm": {
+    "message": "Язык $1 уже импортирован. Заменить его?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover готов к работе"
+  },
+  "welcomeBody": {
+    "message": "Выберите свою валюту и наведите курсор на цену."
+  },
+  "welcomeDismiss": {
+    "message": "Понятно"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover пока не может читать страницы"
+  },
+  "pageAccessBody": {
+    "message": "Браузер не даёт доступ к посещаемым вами сайтам, поэтому цены нигде не определяются. Предоставьте доступ и перезагрузите уже открытые вкладки."
+  },
+  "pageAccessGrant": {
+    "message": "Разрешить на всех сайтах"
+  }
+}

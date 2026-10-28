@@ -254,6 +254,57 @@
   "privacyNote": {
     "message": "仅连接 open.er-api.com 获取汇率。你浏览的内容不会离开浏览器。"
   },
+  "sectionLanguage": {
+    "message": "语言"
+  },
+  "uiLanguage": {
+    "message": "界面语言"
+  },
+  "uiLanguageHelp": {
+    "message": "数字格式也随之改变。浏览器自身的菜单仍使用浏览器语言。"
+  },
+  "uiLanguageAuto": {
+    "message": "浏览器语言"
+  },
+  "uiLanguageImported": {
+    "message": "$1（已导入）"
+  },
+  "languageFilesHelp": {
+    "message": "将语言导出为 JSON 文件，翻译后在此导入。未翻译的文字保持英文。"
+  },
+  "languageExport": {
+    "message": "导出：$1"
+  },
+  "languageImport": {
+    "message": "导入…"
+  },
+  "importedLanguages": {
+    "message": "已导入的语言"
+  },
+  "importedLanguagesEmpty": {
+    "message": "没有已导入的语言"
+  },
+  "languageProgress": {
+    "message": "$1 / $2 条文字"
+  },
+  "languageImportDone": {
+    "message": "已导入 $1：已翻译 $2 / $3 条文字。"
+  },
+  "languageImportIgnored": {
+    "message": "已忽略 $1 条未知文字。"
+  },
+  "languageImportPlaceholders": {
+    "message": "缺少占位符，某个数值将不会显示：$1"
+  },
+  "languageImportInvalid": {
+    "message": "这不是 PriceHover 语言文件。"
+  },
+  "languageImportTooLarge": {
+    "message": "文件过大。"
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 已导入。要替换吗？"
+  },
   "welcomeTitle": {
     "message": "PriceHover 已就绪"
   },

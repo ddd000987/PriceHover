@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Najedź na dowolną cenę na dowolnej stronie, aby zobaczyć ją w swojej walucie."
+  },
+  "searchPlaceholder": {
+    "message": "Szukaj lub wpisz cenę…"
+  },
+  "searchLabel": {
+    "message": "Szukaj walut"
+  },
+  "noResults": {
+    "message": "Brak wyników"
+  },
+  "baseCurrency": {
+    "message": "Twoja waluta"
+  },
+  "baseCurrencyHelp": {
+    "message": "Ceny już w tej walucie są pomijane."
+  },
+  "convertTo": {
+    "message": "Przelicz na"
+  },
+  "convertToHelp": {
+    "message": "Wyświetlane w dymku, pod Twoją walutą."
+  },
+  "settings": {
+    "message": "Ustawienia"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin i inne kryptowaluty"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Dodaje 24 aktywa. Kursy z api.coingecko.com, odpytywanego co godzinę tylko przy włączonej opcji."
+  },
+  "cryptoDenied": {
+    "message": "Bez dostępu do api.coingecko.com kryptowaluty pozostają wyłączone."
+  },
+  "ratesUpdated": {
+    "message": "Kursy $1"
+  },
+  "ratesNever": {
+    "message": "Kursy nie zostały wczytane"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Krypto $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Kursy krypto nie zostały wczytane"
+  },
+  "ratesStale": {
+    "message": "Kursy mogą być nieaktualne"
+  },
+  "refresh": {
+    "message": "Odśwież"
+  },
+  "refreshing": {
+    "message": "Odświeżanie…"
+  },
+  "refreshFailed": {
+    "message": "Nie udało się odświeżyć"
+  },
+  "saveFailed": {
+    "message": "Nie udało się zapisać zmiany."
+  },
+  "loadFailed": {
+    "message": "Nie udało się odczytać Twoich ustawień, więc nic nie zostanie zapisane. Spróbuj ponownie za chwilę."
+  },
+  "timeJustNow": {
+    "message": "przed chwilą"
+  },
+  "timeMinutes": {
+    "message": "$1 min temu"
+  },
+  "timeHours": {
+    "message": "$1 godz. temu"
+  },
+  "timeDays": {
+    "message": "$1 dn. temu"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Nie wybrano walut"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Otwórz ustawienia"
+  },
+  "tooltipInferred": {
+    "message": "Waluta odczytana ze strony, a nie z ceny"
+  },
+  "tooltipCopyHint": {
+    "message": "Kliknij, aby skopiować"
+  },
+  "tooltipCopied": {
+    "message": "Skopiowano"
+  },
+  "extensionOff": {
+    "message": "PriceHover jest wyłączony"
+  },
+  "turnOn": {
+    "message": "Włącz"
+  },
+  "pauseOnSite": {
+    "message": "Wstrzymaj na $1"
+  },
+  "resumeOnSite": {
+    "message": "Wznów na $1"
+  },
+  "pausedOnSite": {
+    "message": "Wstrzymano na $1"
+  },
+  "optionsTitle": {
+    "message": "Ustawienia PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "Waluty"
+  },
+  "sectionBehaviour": {
+    "message": "Zachowanie"
+  },
+  "sectionSites": {
+    "message": "Witryny"
+  },
+  "sectionAbout": {
+    "message": "Informacje"
+  },
+  "hoverDelay": {
+    "message": "Opóźnienie po najechaniu"
+  },
+  "hoverDelayHelp": {
+    "message": "Czas bezruchu wskaźnika przed pojawieniem się dymka. Dłużej oznacza mniej migotania."
+  },
+  "delayInstant": {
+    "message": "Natychmiast"
+  },
+  "rounding": {
+    "message": "Zaokrąglanie"
+  },
+  "roundingHelp": {
+    "message": "Przeliczona cena to tylko szacunek. Mniej cyfr lepiej to oddaje."
+  },
+  "roundingExact": {
+    "message": "Dokładnie"
+  },
+  "roundingSmart": {
+    "message": "Inteligentnie"
+  },
+  "roundingInteger": {
+    "message": "Liczby całkowite"
+  },
+  "inlineMode": {
+    "message": "Zamieniaj ceny na stronie"
+  },
+  "inlineModeHelp": {
+    "message": "Twoja waluta obok każdej ceny, bez najeżdżania. Najechanie nadal otwiera listę."
+  },
+  "inlineStyle": {
+    "message": "Na stronie pokazuj"
+  },
+  "inlineStyleHelp": {
+    "message": "Zastąpienie ukrywa cenę witryny, ale jej nie usuwa. Najechanie pokazuje ją ponownie."
+  },
+  "inlineStyleBadge": {
+    "message": "Obie ceny"
+  },
+  "inlineStyleReplace": {
+    "message": "Tylko moją"
+  },
+  "pageContext": {
+    "message": "Odczytuj $$, kr i ¥ ze strony"
+  },
+  "pageContextHelp": {
+    "message": "Na .ca $$ to dolar kanadyjski. Wiersz tabeli lub strona podająca swoją walutę (CNY, CAD) jest brana za pewnik, a strona zapamiętywana dla witryny. Po wyłączeniu obowiązują tylko Twoje blokady."
+  },
+  "enabledEverywhere": {
+    "message": "Włączone"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Wyłączone oznacza, że PriceHover nie robi nic na żadnej stronie."
+  },
+  "pausedSites": {
+    "message": "Wstrzymane witryny"
+  },
+  "pausedSitesEmpty": {
+    "message": "Żadna witryna nie jest wstrzymana."
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "Dodaj"
+  },
+  "remove": {
+    "message": "Usuń"
+  },
+  "moveUp": {
+    "message": "Przenieś w górę"
+  },
+  "moveDown": {
+    "message": "Przenieś w dół"
+  },
+  "invalidSite": {
+    "message": "To nie jest adres witryny. Spróbuj example.com."
+  },
+  "siteAction": {
+    "message": "Na tej witrynie"
+  },
+  "siteActionPause": {
+    "message": "Wstrzymaj"
+  },
+  "siteActionLock": {
+    "message": "Zablokuj walutę"
+  },
+  "siteLockCurrency": {
+    "message": "Waluta dla $$, kr lub ¥"
+  },
+  "lockedSites": {
+    "message": "Zablokowane waluty"
+  },
+  "lockedSitesHelp": {
+    "message": "Na tych witrynach symbol zawsze oznacza wybraną przez Ciebie walutę, niezależnie od sugestii strony."
+  },
+  "lockedSitesEmpty": {
+    "message": "Żadna waluta nie jest zablokowana."
+  },
+  "learnedSites": {
+    "message": "Odczytane z witryn"
+  },
+  "learnedSitesHelp": {
+    "message": "Waluta podana przez strony witryny, zapamiętana tylko na tym urządzeniu. Domena i Twoje blokady mają pierwszeństwo."
+  },
+  "learnedSitesEmpty": {
+    "message": "Nic jeszcze nie odczytano."
+  },
+  "reset": {
+    "message": "Przywróć domyślne"
+  },
+  "resetWarning": {
+    "message": "Spowoduje to usunięcie wszystkich ustawień, w tym wstrzymanych i zablokowanych witryn oraz tego, czego rozszerzenie nauczyło się od witryn. Nie można tego cofnąć."
+  },
+  "resetConfirm": {
+    "message": "Potwierdź reset"
+  },
+  "resetCancel": {
+    "message": "Anuluj"
+  },
+  "version": {
+    "message": "Wersja $1"
+  },
+  "privacyPolicy": {
+    "message": "Polityka prywatności"
+  },
+  "privacyNote": {
+    "message": "Jeden host dla kursów: open.er-api.com. To, co przeglądasz, nie opuszcza przeglądarki."
+  },
+  "sectionLanguage": {
+    "message": "Język"
+  },
+  "uiLanguage": {
+    "message": "Język interfejsu"
+  },
+  "uiLanguageHelp": {
+    "message": "Liczby też są zapisywane według niego. Menu samej przeglądarki zachowują język przeglądarki."
+  },
+  "uiLanguageAuto": {
+    "message": "Język przeglądarki"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (import)"
+  },
+  "languageFilesHelp": {
+    "message": "Wyeksportuj język jako plik JSON, przetłumacz go, a potem zaimportuj tutaj. Pominięte teksty pozostają po angielsku."
+  },
+  "languageExport": {
+    "message": "Eksport: $1"
+  },
+  "languageImport": {
+    "message": "Importuj…"
+  },
+  "importedLanguages": {
+    "message": "Zaimportowane języki"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Brak zaimportowanych języków"
+  },
+  "languageProgress": {
+    "message": "Tekstów: $1 z $2"
+  },
+  "languageImportDone": {
+    "message": "Import $1: przetłumaczono tekstów: $2 z $3."
+  },
+  "languageImportIgnored": {
+    "message": "Pominięto nieznanych tekstów: $1."
+  },
+  "languageImportPlaceholders": {
+    "message": "Brakuje symbolu zastępczego, więc wartość się nie wyświetli: $1"
+  },
+  "languageImportInvalid": {
+    "message": "To nie jest plik językowy PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Ten plik jest za duży."
+  },
+  "languageReplaceConfirm": {
+    "message": "Język $1 jest już zaimportowany. Zastąpić go?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover jest gotowy"
+  },
+  "welcomeBody": {
+    "message": "Wybierz swoją walutę, a potem najedź na cenę."
+  },
+  "welcomeDismiss": {
+    "message": "Rozumiem"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover nie może jeszcze czytać stron"
+  },
+  "pageAccessBody": {
+    "message": "Przeglądarka wstrzymuje dostęp do odwiedzanych witryn, więc nigdzie nie wykrywa się cen. Przyznaj go i odśwież już otwarte karty."
+  },
+  "pageAccessGrant": {
+    "message": "Zezwól na wszystkich witrynach"
+  }
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- No `lang` here: the UI ships in eight locales and App.svelte sets it from
-     chrome.i18n.getUILanguage() on mount. An extension page cannot run an
+<!-- No `lang` here: the UI ships in many locales, plus imported ones, and App.svelte
+     sets it from uiLocale() on mount. An extension page cannot run an
      inline script under MV3's CSP, so this is as early as it gets. -->
 <html>
   <head>

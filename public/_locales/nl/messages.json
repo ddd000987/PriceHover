@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Beweeg over een prijs op elke pagina om hem in je eigen valuta te zien."
+  },
+  "searchPlaceholder": {
+    "message": "Zoek of typ een prijs…"
+  },
+  "searchLabel": {
+    "message": "Valuta zoeken"
+  },
+  "noResults": {
+    "message": "Geen resultaten"
+  },
+  "baseCurrency": {
+    "message": "Jouw valuta"
+  },
+  "baseCurrencyHelp": {
+    "message": "Prijzen die al in deze valuta staan, blijven ongemoeid."
+  },
+  "convertTo": {
+    "message": "Omrekenen naar"
+  },
+  "convertToHelp": {
+    "message": "Getoond in de tooltip, onder je eigen valuta."
+  },
+  "settings": {
+    "message": "Instellingen"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin en andere crypto"
+  },
+  "cryptoEnabledHelp": {
+    "message": "Voegt 24 activa toe. Koersen van api.coingecko.com, elk uur benaderd, alleen zolang dit aan staat."
+  },
+  "cryptoDenied": {
+    "message": "Crypto blijft uit zonder toegang tot api.coingecko.com."
+  },
+  "ratesUpdated": {
+    "message": "Koersen $1"
+  },
+  "ratesNever": {
+    "message": "Koersen niet geladen"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Crypto $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Cryptokoersen niet geladen"
+  },
+  "ratesStale": {
+    "message": "Koersen zijn mogelijk verouderd"
+  },
+  "refresh": {
+    "message": "Vernieuwen"
+  },
+  "refreshing": {
+    "message": "Vernieuwen…"
+  },
+  "refreshFailed": {
+    "message": "Vernieuwen mislukt"
+  },
+  "saveFailed": {
+    "message": "Je wijziging kon niet worden opgeslagen."
+  },
+  "loadFailed": {
+    "message": "Je instellingen konden niet worden gelezen, dus er wordt niets opgeslagen. Probeer het zo opnieuw."
+  },
+  "timeJustNow": {
+    "message": "zojuist"
+  },
+  "timeMinutes": {
+    "message": "$1 min geleden"
+  },
+  "timeHours": {
+    "message": "$1 u geleden"
+  },
+  "timeDays": {
+    "message": "$1 d geleden"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Geen valuta gekozen"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Instellingen openen"
+  },
+  "tooltipInferred": {
+    "message": "Valuta afgeleid van de site, niet van de prijs"
+  },
+  "tooltipCopyHint": {
+    "message": "Klik om te kopiëren"
+  },
+  "tooltipCopied": {
+    "message": "Gekopieerd"
+  },
+  "extensionOff": {
+    "message": "PriceHover staat uit"
+  },
+  "turnOn": {
+    "message": "Inschakelen"
+  },
+  "pauseOnSite": {
+    "message": "Pauzeren op $1"
+  },
+  "resumeOnSite": {
+    "message": "Hervatten op $1"
+  },
+  "pausedOnSite": {
+    "message": "Gepauzeerd op $1"
+  },
+  "optionsTitle": {
+    "message": "PriceHover-instellingen"
+  },
+  "sectionCurrencies": {
+    "message": "Valuta’s"
+  },
+  "sectionBehaviour": {
+    "message": "Gedrag"
+  },
+  "sectionSites": {
+    "message": "Sites"
+  },
+  "sectionAbout": {
+    "message": "Over"
+  },
+  "hoverDelay": {
+    "message": "Vertraging bij hoveren"
+  },
+  "hoverDelayHelp": {
+    "message": "Hoe lang de aanwijzer stilstaat voordat de tooltip opent. Langer betekent minder geflits."
+  },
+  "delayInstant": {
+    "message": "Direct"
+  },
+  "rounding": {
+    "message": "Afronding"
+  },
+  "roundingHelp": {
+    "message": "Een omgerekende prijs is een schatting. Minder cijfers laten dat zien."
+  },
+  "roundingExact": {
+    "message": "Exact"
+  },
+  "roundingSmart": {
+    "message": "Slim"
+  },
+  "roundingInteger": {
+    "message": "Hele getallen"
+  },
+  "inlineMode": {
+    "message": "Prijzen op de pagina herschrijven"
+  },
+  "inlineModeHelp": {
+    "message": "Jouw valuta naast elke prijs, zonder hoveren. Hoveren opent nog steeds de lijst."
+  },
+  "inlineStyle": {
+    "message": "Op de pagina tonen"
+  },
+  "inlineStyleHelp": {
+    "message": "Vervangen verbergt de prijs van de site zonder hem te wissen. Hoveren toont hem weer."
+  },
+  "inlineStyleBadge": {
+    "message": "Beide prijzen"
+  },
+  "inlineStyleReplace": {
+    "message": "Alleen de mijne"
+  },
+  "pageContext": {
+    "message": "Lees $$, kr en ¥ van de site"
+  },
+  "pageContextHelp": {
+    "message": "Op .ca is $$ Canadees. Een tabelrij of pagina die de eigen valuta noemt (CNY, CAD) wordt geloofd, en de pagina wordt voor de site onthouden. Uit: alleen je vergrendelingen gelden."
+  },
+  "enabledEverywhere": {
+    "message": "Ingeschakeld"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Uit betekent dat PriceHover op geen enkele pagina iets doet."
+  },
+  "pausedSites": {
+    "message": "Gepauzeerde sites"
+  },
+  "pausedSitesEmpty": {
+    "message": "Geen site gepauzeerd."
+  },
+  "addSitePlaceholder": {
+    "message": "voorbeeld.nl"
+  },
+  "add": {
+    "message": "Toevoegen"
+  },
+  "remove": {
+    "message": "Verwijderen"
+  },
+  "moveUp": {
+    "message": "Omhoog"
+  },
+  "moveDown": {
+    "message": "Omlaag"
+  },
+  "invalidSite": {
+    "message": "Dat is geen siteadres. Probeer voorbeeld.nl."
+  },
+  "siteAction": {
+    "message": "Op deze site"
+  },
+  "siteActionPause": {
+    "message": "Pauzeren"
+  },
+  "siteActionLock": {
+    "message": "Valuta vergrendelen"
+  },
+  "siteLockCurrency": {
+    "message": "Valuta voor $$, kr of ¥"
+  },
+  "lockedSites": {
+    "message": "Vergrendelde valuta’s"
+  },
+  "lockedSitesHelp": {
+    "message": "Op deze sites betekent het symbool altijd de valuta die je koos, wat de pagina ook suggereert."
+  },
+  "lockedSitesEmpty": {
+    "message": "Geen valuta vergrendeld."
+  },
+  "learnedSites": {
+    "message": "Van de sites gelezen"
+  },
+  "learnedSitesHelp": {
+    "message": "De valuta die de pagina’s van een site noemden, alleen op dit apparaat onthouden. Het domein en je vergrendelingen gaan voor."
+  },
+  "learnedSitesEmpty": {
+    "message": "Nog niets gelezen."
+  },
+  "reset": {
+    "message": "Standaardwaarden herstellen"
+  },
+  "resetWarning": {
+    "message": "Dit wist alle instellingen, inclusief je gepauzeerde en vergrendelde sites en wat sites het hebben geleerd. Dit kan niet ongedaan worden gemaakt."
+  },
+  "resetConfirm": {
+    "message": "Herstel bevestigen"
+  },
+  "resetCancel": {
+    "message": "Annuleren"
+  },
+  "version": {
+    "message": "Versie $1"
+  },
+  "privacyPolicy": {
+    "message": "Privacybeleid"
+  },
+  "privacyNote": {
+    "message": "Eén host voor koersen, open.er-api.com. Wat je bekijkt verlaat je browser nooit."
+  },
+  "sectionLanguage": {
+    "message": "Taal"
+  },
+  "uiLanguage": {
+    "message": "Interfacetaal"
+  },
+  "uiLanguageHelp": {
+    "message": "Getallen worden ook op zijn manier geschreven. De menu’s van de browser houden de taal van de browser."
+  },
+  "uiLanguageAuto": {
+    "message": "Browsertaal"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (geïmporteerd)"
+  },
+  "languageFilesHelp": {
+    "message": "Exporteer een taal als JSON-bestand, vertaal het en importeer het hier. Weggelaten teksten blijven Engels."
+  },
+  "languageExport": {
+    "message": "Exporteer $1"
+  },
+  "languageImport": {
+    "message": "Importeren…"
+  },
+  "importedLanguages": {
+    "message": "Geïmporteerde talen"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Geen geïmporteerde talen"
+  },
+  "languageProgress": {
+    "message": "$1 van $2 teksten"
+  },
+  "languageImportDone": {
+    "message": "$1 geïmporteerd: $2 van $3 teksten vertaald."
+  },
+  "languageImportIgnored": {
+    "message": "$1 onbekende teksten zijn genegeerd."
+  },
+  "languageImportPlaceholders": {
+    "message": "Er mist een tijdelijke aanduiding, dus een waarde wordt niet getoond: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Dit is geen PriceHover-taalbestand."
+  },
+  "languageImportTooLarge": {
+    "message": "Dit bestand is te groot."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 is al geïmporteerd. Vervangen?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover is klaar"
+  },
+  "welcomeBody": {
+    "message": "Kies je valuta en beweeg dan over een prijs."
+  },
+  "welcomeDismiss": {
+    "message": "Begrepen"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover kan pagina’s nog niet lezen"
+  },
+  "pageAccessBody": {
+    "message": "Je browser houdt de toegang tot de sites die je bezoekt tegen, dus nergens wordt een prijs gedetecteerd. Verleen de toegang en laad daarna de al geopende tabbladen opnieuw."
+  },
+  "pageAccessGrant": {
+    "message": "Toestaan op alle sites"
+  }
+}

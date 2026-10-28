@@ -61,6 +61,15 @@ export const STORAGE = {
    * user, and a settings write must never race a page that is learning.
    */
   SITE_HINTS: 'siteCurrencyHints',
+  /** Language packs the user imported, by code. Data, not a preference. */
+  CUSTOM_LANGUAGES: 'customLanguages',
+  /**
+   * The chosen language resolved into one table. Derived from the two keys
+   * above plus the bundled `_locales`, and rebuilt whenever any of them may have
+   * changed. It exists because a content script cannot read the bundled
+   * `_locales` files without exposing them to every page.
+   */
+  ACTIVE_LANGUAGE: 'activeLanguage',
 } as const;
 
 export const DEFAULT_CURRENCIES = ['EUR', 'USD', 'GBP'];

@@ -254,6 +254,57 @@
   "privacyNote": {
     "message": "Un solo host per i tassi, open.er-api.com. Le tue pagine restano nel browser."
   },
+  "sectionLanguage": {
+    "message": "Lingua"
+  },
+  "uiLanguage": {
+    "message": "Lingua dell’interfaccia"
+  },
+  "uiLanguageHelp": {
+    "message": "Anche i numeri seguono questa lingua. I menu del browser mantengono la sua lingua."
+  },
+  "uiLanguageAuto": {
+    "message": "Lingua del browser"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (importata)"
+  },
+  "languageFilesHelp": {
+    "message": "Esporta una lingua come file JSON, traducila e importala qui. I testi mancanti restano in inglese."
+  },
+  "languageExport": {
+    "message": "Esporta: $1"
+  },
+  "languageImport": {
+    "message": "Importa…"
+  },
+  "importedLanguages": {
+    "message": "Lingue importate"
+  },
+  "importedLanguagesEmpty": {
+    "message": "Nessuna lingua importata"
+  },
+  "languageProgress": {
+    "message": "$1 testi su $2"
+  },
+  "languageImportDone": {
+    "message": "$1 importata: $2 testi tradotti su $3."
+  },
+  "languageImportIgnored": {
+    "message": "$1 testi sconosciuti sono stati ignorati."
+  },
+  "languageImportPlaceholders": {
+    "message": "Manca un segnaposto, quindi un valore non verrà mostrato: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Questo non è un file di lingua di PriceHover."
+  },
+  "languageImportTooLarge": {
+    "message": "Questo file è troppo grande."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 è già importata. Sostituirla?"
+  },
   "welcomeTitle": {
     "message": "PriceHover è pronto"
   },

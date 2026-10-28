@@ -1,3 +1,4 @@
+import { applyLanguage } from '../src/languages';
 import { MESSAGE } from '../src/messages';
 import type { RefreshResult } from '../src/messages';
 import { hasCryptoAccess, watchCryptoRevoked } from '../src/permissions';
@@ -136,6 +137,9 @@ export default defineBackground(() => {
   chrome.runtime.onInstalled?.addListener((details) => {
     refreshIfStale().catch(() => {});
     syncBadge().catch(() => {});
+    // An update can change the bundled texts under a language picked by hand,
+    // and the resolved table would keep serving the old ones.
+    applyLanguage().catch(() => {});
 
     // A fresh install lands on the options page. Without it the extension gives
     // no sign it exists beyond an icon, and everything it does depends on the

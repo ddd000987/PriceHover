@@ -8,6 +8,7 @@ import { makeTokenResolver, pageChoice, regionChoice } from '../src/locale';
 import type { TokenResolver } from '../src/locale';
 import { collectPageSignals, rowContext } from '../src/page-signals';
 import { parseSiteHints, readSiteHint, rememberSiteHint } from '../src/site-hints';
+import { initI18n } from '../src/i18n';
 import { MESSAGE, send } from '../src/messages';
 import type { RefreshResult } from '../src/messages';
 import { isCryptoCode } from '../src/crypto';
@@ -34,7 +35,10 @@ export default defineContentScript({
     if (!document.body) return;
 
     const hostname = location.hostname;
-    let settings = await loadSettings();
+    // Language before settings: nothing renders until both are in, and the
+    // tooltip formats numbers in whatever language was picked.
+    const [loadedSettings] = await Promise.all([loadSettings(), initI18n()]);
+    let settings = loadedSettings;
     // A page written in crypto is only read as such once the user asked for it.
     setCryptoDetection(settings.cryptoEnabled);
 
@@ -531,9 +535,15 @@ export default defineContentScript({
       return [settings.baseCurrency, ...settings.targetCurrencies];
     }
 
+    /**
+     * Only the base currency is left alone. A price in one of the targets still
+     * opens the tooltip: base EUR with USD and JPY as targets should show a US
+     * price in euros and yen. `convertPrice` drops the row the price is already
+     * in, so nothing is listed twice. Inline mode has always keyed on the base
+     * alone, so the two now agree.
+     */
     function isOwnCurrency(price: DetectedPrice): boolean {
-      return price.currencyCode === settings.baseCurrency ||
-             settings.targetCurrencies.includes(price.currencyCode);
+      return price.currencyCode === settings.baseCurrency;
     }
 
     // ── Pointer ──────────────────────────────────────────────────────────────

@@ -57,7 +57,16 @@ export interface Settings {
    * revoked from the browser's own UI flips it back off.
    */
   cryptoEnabled: boolean;
+  /**
+   * `auto` follows the browser. Otherwise a bundled locale (`zh_TW`) or an
+   * imported pack (`custom:ko`). Only the shape is checked here: a pack that
+   * has since been removed resolves to `auto` when the language is applied.
+   */
+  uiLanguage: string;
 }
+
+/** `auto`, `pt_BR`, `custom:pt-PT`. */
+const UI_LANGUAGE_RE = /^(?:auto|(?:custom:)?[A-Za-z]{2,3}(?:[_-][A-Za-z0-9]{2,8}){0,2})$/;
 
 export const DEFAULT_SETTINGS: Settings = {
   enabled: true,
@@ -71,6 +80,7 @@ export const DEFAULT_SETTINGS: Settings = {
   inlineStyle: 'badge',
   usePageContext: true,
   cryptoEnabled: false,
+  uiLanguage: 'auto',
 };
 
 export const HOVER_DELAY_CHOICES = [0, 120, 180, 300, 500] as const;
@@ -231,6 +241,10 @@ export function parseSettings(raw: unknown): Settings {
     inlineStyle: input.inlineStyle === 'replace' ? 'replace' : DEFAULT_SETTINGS.inlineStyle,
     usePageContext: input.usePageContext !== false,
     cryptoEnabled: input.cryptoEnabled === true,
+    uiLanguage:
+      typeof input.uiLanguage === 'string' && UI_LANGUAGE_RE.test(input.uiLanguage)
+        ? input.uiLanguage
+        : DEFAULT_SETTINGS.uiLanguage,
   };
 }
 

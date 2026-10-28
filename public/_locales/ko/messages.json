@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "어떤 페이지에서든 가격 위에 마우스를 올리면 내 통화로 보여 줍니다."
+  },
+  "searchPlaceholder": {
+    "message": "검색하거나 가격 입력…"
+  },
+  "searchLabel": {
+    "message": "통화 검색"
+  },
+  "noResults": {
+    "message": "결과 없음"
+  },
+  "baseCurrency": {
+    "message": "내 통화"
+  },
+  "baseCurrencyHelp": {
+    "message": "이미 이 통화로 표시된 가격은 그대로 둡니다."
+  },
+  "convertTo": {
+    "message": "환산할 통화"
+  },
+  "convertToHelp": {
+    "message": "툴팁에서 내 통화 아래에 표시됩니다."
+  },
+  "settings": {
+    "message": "설정"
+  },
+  "cryptoEnabled": {
+    "message": "비트코인 및 기타 암호화폐"
+  },
+  "cryptoEnabledHelp": {
+    "message": "자산 24종을 추가합니다. 환율은 api.coingecko.com에서 가져오며, 켜져 있는 동안에만 매시간 접속합니다."
+  },
+  "cryptoDenied": {
+    "message": "api.coingecko.com에 접근할 수 없으면 암호화폐는 꺼진 상태로 유지됩니다."
+  },
+  "ratesUpdated": {
+    "message": "환율 $1"
+  },
+  "ratesNever": {
+    "message": "환율을 불러오지 않음"
+  },
+  "cryptoRatesUpdated": {
+    "message": "암호화폐 $1"
+  },
+  "cryptoRatesNever": {
+    "message": "암호화폐 환율을 불러오지 않음"
+  },
+  "ratesStale": {
+    "message": "환율이 오래되었을 수 있음"
+  },
+  "refresh": {
+    "message": "새로고침"
+  },
+  "refreshing": {
+    "message": "새로고침 중…"
+  },
+  "refreshFailed": {
+    "message": "새로고침 실패"
+  },
+  "saveFailed": {
+    "message": "변경 사항을 저장하지 못했습니다."
+  },
+  "loadFailed": {
+    "message": "설정을 읽지 못해 아무것도 저장되지 않습니다. 잠시 후 다시 시도하세요."
+  },
+  "timeJustNow": {
+    "message": "방금"
+  },
+  "timeMinutes": {
+    "message": "$1분 전"
+  },
+  "timeHours": {
+    "message": "$1시간 전"
+  },
+  "timeDays": {
+    "message": "$1일 전"
+  },
+  "tooltipNoCurrencies": {
+    "message": "선택한 통화 없음"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "설정 열기"
+  },
+  "tooltipInferred": {
+    "message": "가격이 아닌 사이트를 보고 통화를 판단함"
+  },
+  "tooltipCopyHint": {
+    "message": "클릭하여 복사"
+  },
+  "tooltipCopied": {
+    "message": "복사됨"
+  },
+  "extensionOff": {
+    "message": "PriceHover가 꺼져 있습니다"
+  },
+  "turnOn": {
+    "message": "켜기"
+  },
+  "pauseOnSite": {
+    "message": "$1에서 일시중지"
+  },
+  "resumeOnSite": {
+    "message": "$1에서 다시 시작"
+  },
+  "pausedOnSite": {
+    "message": "$1에서 일시중지됨"
+  },
+  "optionsTitle": {
+    "message": "PriceHover 설정"
+  },
+  "sectionCurrencies": {
+    "message": "통화"
+  },
+  "sectionBehaviour": {
+    "message": "동작"
+  },
+  "sectionSites": {
+    "message": "사이트"
+  },
+  "sectionAbout": {
+    "message": "정보"
+  },
+  "hoverDelay": {
+    "message": "호버 지연"
+  },
+  "hoverDelayHelp": {
+    "message": "툴팁이 열리기 전에 포인터가 멈춰 있어야 하는 시간. 길수록 스쳐 지날 때 덜 깜박입니다."
+  },
+  "delayInstant": {
+    "message": "즉시"
+  },
+  "rounding": {
+    "message": "반올림"
+  },
+  "roundingHelp": {
+    "message": "환산한 가격은 추정치입니다. 자릿수가 적을수록 그 점이 잘 드러납니다."
+  },
+  "roundingExact": {
+    "message": "정확히"
+  },
+  "roundingSmart": {
+    "message": "스마트"
+  },
+  "roundingInteger": {
+    "message": "정수"
+  },
+  "inlineMode": {
+    "message": "페이지의 가격 바꿔 쓰기"
+  },
+  "inlineModeHelp": {
+    "message": "호버 없이 모든 가격 옆에 내 통화를 표시합니다. 호버하면 목록이 열립니다."
+  },
+  "inlineStyle": {
+    "message": "페이지에서 표시"
+  },
+  "inlineStyleHelp": {
+    "message": "바꾸면 사이트의 가격이 삭제되지 않고 숨겨집니다. 호버하면 다시 보입니다."
+  },
+  "inlineStyleBadge": {
+    "message": "두 가격 모두"
+  },
+  "inlineStyleReplace": {
+    "message": "내 통화만"
+  },
+  "pageContext": {
+    "message": "사이트에 따라 $$, kr, ¥ 해석"
+  },
+  "pageContextHelp": {
+    "message": ".ca에서는 $$를 캐나다 달러로 봅니다. 표의 행이나 페이지가 통화(CNY, CAD)를 밝히면 그대로 따르고, 그 페이지 정보는 사이트별로 기억합니다. 끄면 고정한 사이트만 적용됩니다."
+  },
+  "enabledEverywhere": {
+    "message": "사용"
+  },
+  "enabledEverywhereHelp": {
+    "message": "끄면 PriceHover는 어떤 페이지에서도 동작하지 않습니다."
+  },
+  "pausedSites": {
+    "message": "일시중지한 사이트"
+  },
+  "pausedSitesEmpty": {
+    "message": "일시중지한 사이트가 없습니다."
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "추가"
+  },
+  "remove": {
+    "message": "삭제"
+  },
+  "moveUp": {
+    "message": "위로 이동"
+  },
+  "moveDown": {
+    "message": "아래로 이동"
+  },
+  "invalidSite": {
+    "message": "사이트 주소가 아닙니다. example.com처럼 입력해 보세요."
+  },
+  "siteAction": {
+    "message": "이 사이트에서"
+  },
+  "siteActionPause": {
+    "message": "일시중지"
+  },
+  "siteActionLock": {
+    "message": "통화 고정"
+  },
+  "siteLockCurrency": {
+    "message": "$$, kr, ¥의 통화"
+  },
+  "lockedSites": {
+    "message": "고정한 통화"
+  },
+  "lockedSitesHelp": {
+    "message": "이 사이트들에서는 페이지가 어떻게 보이든 기호를 항상 선택한 통화로 해석합니다."
+  },
+  "lockedSitesEmpty": {
+    "message": "고정한 통화가 없습니다."
+  },
+  "learnedSites": {
+    "message": "사이트에서 읽음"
+  },
+  "learnedSitesHelp": {
+    "message": "사이트 페이지가 밝힌 통화로, 이 기기에만 기억됩니다. 도메인과 고정한 통화가 우선합니다."
+  },
+  "learnedSitesEmpty": {
+    "message": "아직 읽은 내용이 없습니다."
+  },
+  "reset": {
+    "message": "기본값으로 재설정"
+  },
+  "resetWarning": {
+    "message": "일시중지·고정한 사이트와 사이트에서 익힌 내용을 포함해 모든 설정이 지워집니다. 되돌릴 수 없습니다."
+  },
+  "resetConfirm": {
+    "message": "재설정 확인"
+  },
+  "resetCancel": {
+    "message": "취소"
+  },
+  "version": {
+    "message": "버전 $1"
+  },
+  "privacyPolicy": {
+    "message": "개인정보처리방침"
+  },
+  "privacyNote": {
+    "message": "환율은 호스트 한 곳, open.er-api.com에서만 가져옵니다. 탐색 내용은 브라우저 밖으로 나가지 않습니다."
+  },
+  "sectionLanguage": {
+    "message": "언어"
+  },
+  "uiLanguage": {
+    "message": "인터페이스 언어"
+  },
+  "uiLanguageHelp": {
+    "message": "숫자 표기도 이 언어를 따릅니다. 브라우저 자체 메뉴는 브라우저 언어를 유지합니다."
+  },
+  "uiLanguageAuto": {
+    "message": "브라우저 언어"
+  },
+  "uiLanguageImported": {
+    "message": "$1(가져옴)"
+  },
+  "languageFilesHelp": {
+    "message": "언어를 JSON 파일로 내보내 번역한 다음 여기에서 가져옵니다. 빠진 문구는 영어로 남습니다."
+  },
+  "languageExport": {
+    "message": "내보내기: $1"
+  },
+  "languageImport": {
+    "message": "가져오기…"
+  },
+  "importedLanguages": {
+    "message": "가져온 언어"
+  },
+  "importedLanguagesEmpty": {
+    "message": "가져온 언어 없음"
+  },
+  "languageProgress": {
+    "message": "문구 $2개 중 $1개"
+  },
+  "languageImportDone": {
+    "message": "$1을(를) 가져왔습니다. 문구 $3개 중 $2개 번역됨."
+  },
+  "languageImportIgnored": {
+    "message": "알 수 없는 문구 $1개를 무시했습니다."
+  },
+  "languageImportPlaceholders": {
+    "message": "자리 표시자가 빠져 값이 표시되지 않습니다: $1"
+  },
+  "languageImportInvalid": {
+    "message": "PriceHover 언어 파일이 아닙니다."
+  },
+  "languageImportTooLarge": {
+    "message": "파일이 너무 큽니다."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1은(는) 이미 가져왔습니다. 바꾸시겠습니까?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover 준비 완료"
+  },
+  "welcomeBody": {
+    "message": "내 통화를 고른 다음 가격 위에 마우스를 올려 보세요."
+  },
+  "welcomeDismiss": {
+    "message": "확인"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover가 아직 페이지를 읽을 수 없습니다"
+  },
+  "pageAccessBody": {
+    "message": "브라우저가 방문하는 사이트에 대한 접근을 보류하고 있어 어디서도 가격이 감지되지 않습니다. 접근을 허용한 다음 이미 열어 둔 탭을 새로고침하세요."
+  },
+  "pageAccessGrant": {
+    "message": "모든 사이트에서 허용"
+  }
+}

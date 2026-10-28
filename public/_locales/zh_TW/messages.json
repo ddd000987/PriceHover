@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "將滑鼠移到任何網頁的價格上，即可查看以你的貨幣表示的金額。"
+  },
+  "searchPlaceholder": {
+    "message": "搜尋或輸入價格…"
+  },
+  "searchLabel": {
+    "message": "搜尋貨幣"
+  },
+  "noResults": {
+    "message": "沒有結果"
+  },
+  "baseCurrency": {
+    "message": "你的貨幣"
+  },
+  "baseCurrencyHelp": {
+    "message": "已經是這個貨幣的價格會略過不處理。"
+  },
+  "convertTo": {
+    "message": "換算為"
+  },
+  "convertToHelp": {
+    "message": "顯示在提示框中，位於你的貨幣下方。"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "cryptoEnabled": {
+    "message": "比特幣及其他加密貨幣"
+  },
+  "cryptoEnabledHelp": {
+    "message": "新增 24 種加密資產。匯率來自 api.coingecko.com，僅在開啟時每小時連線一次。"
+  },
+  "cryptoDenied": {
+    "message": "未取得 api.coingecko.com 的存取權時，加密貨幣會保持關閉。"
+  },
+  "ratesUpdated": {
+    "message": "匯率 $1"
+  },
+  "ratesNever": {
+    "message": "匯率尚未載入"
+  },
+  "cryptoRatesUpdated": {
+    "message": "加密貨幣 $1"
+  },
+  "cryptoRatesNever": {
+    "message": "加密貨幣匯率尚未載入"
+  },
+  "ratesStale": {
+    "message": "匯率可能已過期"
+  },
+  "refresh": {
+    "message": "重新整理"
+  },
+  "refreshing": {
+    "message": "正在重新整理…"
+  },
+  "refreshFailed": {
+    "message": "重新整理失敗"
+  },
+  "saveFailed": {
+    "message": "無法儲存你的變更。"
+  },
+  "loadFailed": {
+    "message": "無法讀取你的設定，因此不會儲存任何變更。請稍後再試。"
+  },
+  "timeJustNow": {
+    "message": "剛剛"
+  },
+  "timeMinutes": {
+    "message": "$1 分鐘前"
+  },
+  "timeHours": {
+    "message": "$1 小時前"
+  },
+  "timeDays": {
+    "message": "$1 天前"
+  },
+  "tooltipNoCurrencies": {
+    "message": "尚未選擇貨幣"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "開啟設定"
+  },
+  "tooltipInferred": {
+    "message": "貨幣是依網站推斷，而非價格本身"
+  },
+  "tooltipCopyHint": {
+    "message": "點一下即可複製"
+  },
+  "tooltipCopied": {
+    "message": "已複製"
+  },
+  "extensionOff": {
+    "message": "PriceHover 已關閉"
+  },
+  "turnOn": {
+    "message": "開啟"
+  },
+  "pauseOnSite": {
+    "message": "在 $1 暫停"
+  },
+  "resumeOnSite": {
+    "message": "在 $1 恢復"
+  },
+  "pausedOnSite": {
+    "message": "已在 $1 暫停"
+  },
+  "optionsTitle": {
+    "message": "PriceHover 設定"
+  },
+  "sectionCurrencies": {
+    "message": "貨幣"
+  },
+  "sectionBehaviour": {
+    "message": "行為"
+  },
+  "sectionSites": {
+    "message": "網站"
+  },
+  "sectionAbout": {
+    "message": "關於"
+  },
+  "hoverDelay": {
+    "message": "停留延遲"
+  },
+  "hoverDelayHelp": {
+    "message": "提示框出現前，游標需靜止的時間。時間越長，閃現越少。"
+  },
+  "delayInstant": {
+    "message": "立即"
+  },
+  "rounding": {
+    "message": "四捨五入"
+  },
+  "roundingHelp": {
+    "message": "換算後的價格只是估算，位數越少越誠實。"
+  },
+  "roundingExact": {
+    "message": "精確"
+  },
+  "roundingSmart": {
+    "message": "智慧"
+  },
+  "roundingInteger": {
+    "message": "整數"
+  },
+  "inlineMode": {
+    "message": "直接改寫頁面中的價格"
+  },
+  "inlineModeHelp": {
+    "message": "不必懸停，每個價格旁都會顯示你的貨幣。懸停仍會開啟清單。"
+  },
+  "inlineStyle": {
+    "message": "頁面中顯示"
+  },
+  "inlineStyleHelp": {
+    "message": "取代只是隱藏網站原價，並未刪除。懸停即可再次看到。"
+  },
+  "inlineStyleBadge": {
+    "message": "兩個價格"
+  },
+  "inlineStyleReplace": {
+    "message": "只顯示我的"
+  },
+  "pageContext": {
+    "message": "依網站判讀 $$、kr 和 ¥"
+  },
+  "pageContextHelp": {
+    "message": "在 .ca 上 $$ 代表加幣。表格列或頁面寫明貨幣（CNY、CAD）時以其為準，並依網站記住。關閉後只有你鎖定的網站會生效。"
+  },
+  "enabledEverywhere": {
+    "message": "已啟用"
+  },
+  "enabledEverywhereHelp": {
+    "message": "關閉後，PriceHover 在任何頁面都不會運作。"
+  },
+  "pausedSites": {
+    "message": "已暫停的網站"
+  },
+  "pausedSitesEmpty": {
+    "message": "沒有暫停的網站。"
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "新增"
+  },
+  "remove": {
+    "message": "移除"
+  },
+  "moveUp": {
+    "message": "上移"
+  },
+  "moveDown": {
+    "message": "下移"
+  },
+  "invalidSite": {
+    "message": "這不是網站網址。請試試 example.com。"
+  },
+  "siteAction": {
+    "message": "在此網站上"
+  },
+  "siteActionPause": {
+    "message": "暫停"
+  },
+  "siteActionLock": {
+    "message": "鎖定貨幣"
+  },
+  "siteLockCurrency": {
+    "message": "$$、kr 或 ¥ 的貨幣"
+  },
+  "lockedSites": {
+    "message": "已鎖定的貨幣"
+  },
+  "lockedSitesHelp": {
+    "message": "在這些網站上，無論頁面如何提示，該符號一律代表你選擇的貨幣。"
+  },
+  "lockedSitesEmpty": {
+    "message": "沒有鎖定的貨幣。"
+  },
+  "learnedSites": {
+    "message": "從網站讀取"
+  },
+  "learnedSitesHelp": {
+    "message": "網站頁面寫明的貨幣，僅儲存在這部裝置上。網域和你的鎖定優先。"
+  },
+  "learnedSitesEmpty": {
+    "message": "尚無內容。"
+  },
+  "reset": {
+    "message": "還原預設值"
+  },
+  "resetWarning": {
+    "message": "這會清除所有設定，包括已暫停和已鎖定的網站，以及從網站學到的內容，且無法復原。"
+  },
+  "resetConfirm": {
+    "message": "確認還原預設值"
+  },
+  "resetCancel": {
+    "message": "取消"
+  },
+  "version": {
+    "message": "版本 $1"
+  },
+  "privacyPolicy": {
+    "message": "隱私權政策"
+  },
+  "privacyNote": {
+    "message": "僅連線 open.er-api.com 取得匯率。你瀏覽的內容不會離開瀏覽器。"
+  },
+  "sectionLanguage": {
+    "message": "語言"
+  },
+  "uiLanguage": {
+    "message": "介面語言"
+  },
+  "uiLanguageHelp": {
+    "message": "數字格式也會隨之改變。瀏覽器本身的選單仍使用瀏覽器的語言。"
+  },
+  "uiLanguageAuto": {
+    "message": "瀏覽器語言"
+  },
+  "uiLanguageImported": {
+    "message": "$1（已匯入）"
+  },
+  "languageFilesHelp": {
+    "message": "將語言匯出為 JSON 檔案，翻譯後在此匯入。未翻譯的文字會維持英文。"
+  },
+  "languageExport": {
+    "message": "匯出：$1"
+  },
+  "languageImport": {
+    "message": "匯入…"
+  },
+  "importedLanguages": {
+    "message": "已匯入的語言"
+  },
+  "importedLanguagesEmpty": {
+    "message": "沒有已匯入的語言"
+  },
+  "languageProgress": {
+    "message": "$1 / $2 則文字"
+  },
+  "languageImportDone": {
+    "message": "已匯入 $1：已翻譯 $2 / $3 則文字。"
+  },
+  "languageImportIgnored": {
+    "message": "已忽略 $1 則未知文字。"
+  },
+  "languageImportPlaceholders": {
+    "message": "缺少預留位置，某個數值將不會顯示：$1"
+  },
+  "languageImportInvalid": {
+    "message": "這不是 PriceHover 語言檔案。"
+  },
+  "languageImportTooLarge": {
+    "message": "檔案過大。"
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 已匯入。要取代嗎？"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover 已就緒"
+  },
+  "welcomeBody": {
+    "message": "選擇你的貨幣，然後將游標移到價格上。"
+  },
+  "welcomeDismiss": {
+    "message": "知道了"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover 還無法讀取頁面"
+  },
+  "pageAccessBody": {
+    "message": "瀏覽器暫不授予你所瀏覽網站的存取權，因此任何地方都偵測不到價格。請授予權限，然後重新載入已開啟的分頁。"
+  },
+  "pageAccessGrant": {
+    "message": "在所有網站上允許"
+  }
+}

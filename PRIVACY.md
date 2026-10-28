@@ -31,7 +31,7 @@ extension touches and where it goes.
 | The text of pages you visit | Read in the page, never sent anywhere. Used to find prices. |
 | The page's domain and `<html lang>` | Read in the page, never sent anywhere. Used to tell a Canadian `$` from an American one. |
 | The currency a site names for itself | Only when a page says clearly which currency its `$`, `kr` or `¥` is (a currency picker showing `CAD`, prices written `$49 CAD`): that site's domain and that one code, in `chrome.storage.local` on your own machine. Never sent anywhere, never written from a private window, capped at 300 sites, listed on the settings page where each entry can be removed. |
-| Your settings (currencies, rounding, hover delay, paused sites, sites whose currency you locked) | `chrome.storage.local` on your own machine. Never sent anywhere. |
+| Your settings (currencies, rounding, hover delay, paused sites, sites whose currency you locked, interface language) and language files you import | `chrome.storage.local` on your own machine. Never sent anywhere. |
 | Exchange rates | Fetched from `open.er-api.com`, cached on your machine. |
 | The address of the tab you are on | Read only in the popup, only while it is open, only to show you which site the pause switch applies to. Never stored, never sent. |
 
@@ -111,9 +111,9 @@ log at their end.
 ## Changes
 
 Any change to what is described here will be published in
-[`CHANGELOG.md`](https://github.com/klNuno/PriceHover/blob/main/CHANGELOG.md)
+[`CHANGELOG.md`](https://github.com/ddd000987/PriceHover/blob/main/CHANGELOG.md)
 and reflected in this document before the version that makes it is released.
 
 ## Contact
 
-Open an issue at [github.com/klNuno/PriceHover](https://github.com/klNuno/PriceHover).
+Open an issue at [github.com/ddd000987/PriceHover](https://github.com/ddd000987/PriceHover).

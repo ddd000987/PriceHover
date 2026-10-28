@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "วางเมาส์เหนือราคาบนหน้าเว็บใดก็ได้ เพื่อดูเป็นสกุลเงินของคุณ"
+  },
+  "searchPlaceholder": {
+    "message": "ค้นหาหรือพิมพ์ราคา…"
+  },
+  "searchLabel": {
+    "message": "ค้นหาสกุลเงิน"
+  },
+  "noResults": {
+    "message": "ไม่พบผลลัพธ์"
+  },
+  "baseCurrency": {
+    "message": "สกุลเงินของคุณ"
+  },
+  "baseCurrencyHelp": {
+    "message": "ราคาที่เป็นสกุลเงินนี้อยู่แล้วจะไม่ถูกแปลง"
+  },
+  "convertTo": {
+    "message": "แปลงเป็น"
+  },
+  "convertToHelp": {
+    "message": "แสดงในคำอธิบายเครื่องมือ ใต้สกุลเงินของคุณ"
+  },
+  "settings": {
+    "message": "การตั้งค่า"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin และคริปโตอื่น ๆ"
+  },
+  "cryptoEnabledHelp": {
+    "message": "เพิ่มสินทรัพย์ 24 รายการ อัตราจาก api.coingecko.com เชื่อมต่อทุกชั่วโมงเฉพาะเมื่อเปิดใช้งานอยู่"
+  },
+  "cryptoDenied": {
+    "message": "หากเข้าถึง api.coingecko.com ไม่ได้ คริปโตจะยังคงปิดอยู่"
+  },
+  "ratesUpdated": {
+    "message": "อัตรา $1"
+  },
+  "ratesNever": {
+    "message": "ยังไม่ได้โหลดอัตรา"
+  },
+  "cryptoRatesUpdated": {
+    "message": "คริปโต $1"
+  },
+  "cryptoRatesNever": {
+    "message": "ยังไม่ได้โหลดอัตราคริปโต"
+  },
+  "ratesStale": {
+    "message": "อัตราอาจล้าสมัย"
+  },
+  "refresh": {
+    "message": "รีเฟรช"
+  },
+  "refreshing": {
+    "message": "กำลังรีเฟรช…"
+  },
+  "refreshFailed": {
+    "message": "รีเฟรชไม่สำเร็จ"
+  },
+  "saveFailed": {
+    "message": "ไม่สามารถบันทึกการเปลี่ยนแปลงของคุณได้"
+  },
+  "loadFailed": {
+    "message": "อ่านการตั้งค่าของคุณไม่ได้ จึงจะไม่มีการบันทึกใด ๆ โปรดลองอีกครั้งในอีกสักครู่"
+  },
+  "timeJustNow": {
+    "message": "เมื่อสักครู่"
+  },
+  "timeMinutes": {
+    "message": "$1 นาทีที่แล้ว"
+  },
+  "timeHours": {
+    "message": "$1 ชั่วโมงที่แล้ว"
+  },
+  "timeDays": {
+    "message": "$1 วันที่แล้ว"
+  },
+  "tooltipNoCurrencies": {
+    "message": "ยังไม่ได้เลือกสกุลเงิน"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "เปิดการตั้งค่า"
+  },
+  "tooltipInferred": {
+    "message": "สกุลเงินอ่านจากเว็บไซต์ ไม่ใช่จากราคา"
+  },
+  "tooltipCopyHint": {
+    "message": "คลิกเพื่อคัดลอก"
+  },
+  "tooltipCopied": {
+    "message": "คัดลอกแล้ว"
+  },
+  "extensionOff": {
+    "message": "PriceHover ปิดอยู่"
+  },
+  "turnOn": {
+    "message": "เปิด"
+  },
+  "pauseOnSite": {
+    "message": "หยุดชั่วคราวบน $1"
+  },
+  "resumeOnSite": {
+    "message": "ทำงานต่อบน $1"
+  },
+  "pausedOnSite": {
+    "message": "หยุดชั่วคราวบน $1"
+  },
+  "optionsTitle": {
+    "message": "การตั้งค่า PriceHover"
+  },
+  "sectionCurrencies": {
+    "message": "สกุลเงิน"
+  },
+  "sectionBehaviour": {
+    "message": "การทำงาน"
+  },
+  "sectionSites": {
+    "message": "เว็บไซต์"
+  },
+  "sectionAbout": {
+    "message": "เกี่ยวกับ"
+  },
+  "hoverDelay": {
+    "message": "หน่วงเวลาการวางเมาส์"
+  },
+  "hoverDelayHelp": {
+    "message": "เวลาที่ต้องวางเมาส์นิ่งก่อนคำอธิบายเครื่องมือจะเปิด ยิ่งนานยิ่งแสดงวูบวาบน้อยลง"
+  },
+  "delayInstant": {
+    "message": "ทันที"
+  },
+  "rounding": {
+    "message": "การปัดเศษ"
+  },
+  "roundingHelp": {
+    "message": "ราคาที่แปลงแล้วเป็นเพียงค่าประมาณ ยิ่งตัวเลขน้อยยิ่งบอกชัด"
+  },
+  "roundingExact": {
+    "message": "ตรงเป๊ะ"
+  },
+  "roundingSmart": {
+    "message": "อัจฉริยะ"
+  },
+  "roundingInteger": {
+    "message": "จำนวนเต็ม"
+  },
+  "inlineMode": {
+    "message": "เขียนทับราคาในหน้า"
+  },
+  "inlineModeHelp": {
+    "message": "แสดงสกุลเงินของคุณข้างทุกราคา ไม่ต้องวางเมาส์ การวางเมาส์ยังเปิดรายการอยู่"
+  },
+  "inlineStyle": {
+    "message": "ในหน้าให้แสดง"
+  },
+  "inlineStyleHelp": {
+    "message": "การแทนที่จะซ่อนราคาของเว็บไซต์โดยไม่ลบทิ้ง วางเมาส์เพื่อดูอีกครั้ง"
+  },
+  "inlineStyleBadge": {
+    "message": "ทั้งสองราคา"
+  },
+  "inlineStyleReplace": {
+    "message": "เฉพาะของฉัน"
+  },
+  "pageContext": {
+    "message": "อ่าน $$, kr และ ¥ ตามเว็บไซต์"
+  },
+  "pageContextHelp": {
+    "message": "บน .ca $$ คือดอลลาร์แคนาดา แถวตารางหรือหน้าที่ระบุสกุลเงิน (CNY, CAD) จะถือตามนั้น และจดจำหน้านั้นไว้ให้เว็บไซต์ เมื่อปิด จะใช้เฉพาะสกุลเงินที่คุณล็อกไว้"
+  },
+  "enabledEverywhere": {
+    "message": "เปิดใช้งาน"
+  },
+  "enabledEverywhereHelp": {
+    "message": "เมื่อปิด PriceHover จะไม่ทำงานบนหน้าใดเลย"
+  },
+  "pausedSites": {
+    "message": "เว็บไซต์ที่หยุดชั่วคราว"
+  },
+  "pausedSitesEmpty": {
+    "message": "ไม่มีเว็บไซต์ที่หยุดชั่วคราว"
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "เพิ่ม"
+  },
+  "remove": {
+    "message": "นำออก"
+  },
+  "moveUp": {
+    "message": "เลื่อนขึ้น"
+  },
+  "moveDown": {
+    "message": "เลื่อนลง"
+  },
+  "invalidSite": {
+    "message": "นี่ไม่ใช่ที่อยู่เว็บไซต์ ลอง example.com"
+  },
+  "siteAction": {
+    "message": "บนเว็บไซต์นี้"
+  },
+  "siteActionPause": {
+    "message": "หยุดชั่วคราว"
+  },
+  "siteActionLock": {
+    "message": "ล็อกสกุลเงิน"
+  },
+  "siteLockCurrency": {
+    "message": "สกุลเงินของ $$, kr หรือ ¥"
+  },
+  "lockedSites": {
+    "message": "สกุลเงินที่ล็อกไว้"
+  },
+  "lockedSitesHelp": {
+    "message": "บนเว็บไซต์เหล่านี้ สัญลักษณ์จะหมายถึงสกุลเงินที่คุณเลือกเสมอ ไม่ว่าหน้าเว็บจะบอกว่าอย่างไร"
+  },
+  "lockedSitesEmpty": {
+    "message": "ไม่มีสกุลเงินที่ล็อกไว้"
+  },
+  "learnedSites": {
+    "message": "อ่านจากเว็บไซต์"
+  },
+  "learnedSitesHelp": {
+    "message": "สกุลเงินที่หน้าเว็บของไซต์ระบุไว้ จดจำไว้ในอุปกรณ์เครื่องนี้เท่านั้น โดเมนและสกุลเงินที่คุณล็อกไว้มาก่อน"
+  },
+  "learnedSitesEmpty": {
+    "message": "ยังไม่มีข้อมูลที่อ่านได้"
+  },
+  "reset": {
+    "message": "รีเซ็ตเป็นค่าเริ่มต้น"
+  },
+  "resetWarning": {
+    "message": "การดำเนินการนี้จะล้างการตั้งค่าทั้งหมด รวมถึงเว็บไซต์ที่หยุดชั่วคราวและที่ล็อกไว้ และสิ่งที่เรียนรู้จากเว็บไซต์ ไม่สามารถย้อนกลับได้"
+  },
+  "resetConfirm": {
+    "message": "ยืนยันการรีเซ็ต"
+  },
+  "resetCancel": {
+    "message": "ยกเลิก"
+  },
+  "version": {
+    "message": "เวอร์ชัน $1"
+  },
+  "privacyPolicy": {
+    "message": "นโยบายความเป็นส่วนตัว"
+  },
+  "privacyNote": {
+    "message": "ใช้โฮสต์เดียวสำหรับอัตราแลกเปลี่ยน คือ open.er-api.com สิ่งที่คุณเรียกดูจะไม่ออกจากเบราว์เซอร์"
+  },
+  "sectionLanguage": {
+    "message": "ภาษา"
+  },
+  "uiLanguage": {
+    "message": "ภาษาของอินเทอร์เฟซ"
+  },
+  "uiLanguageHelp": {
+    "message": "ตัวเลขจะเขียนตามภาษานี้ด้วย เมนูของเบราว์เซอร์เองยังใช้ภาษาของเบราว์เซอร์"
+  },
+  "uiLanguageAuto": {
+    "message": "ภาษาของเบราว์เซอร์"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (นำเข้าแล้ว)"
+  },
+  "languageFilesHelp": {
+    "message": "ส่งออกภาษาเป็นไฟล์ JSON แปล แล้วนำเข้าที่นี่ ข้อความที่ขาดจะยังเป็นภาษาอังกฤษ"
+  },
+  "languageExport": {
+    "message": "ส่งออก: $1"
+  },
+  "languageImport": {
+    "message": "นำเข้า…"
+  },
+  "importedLanguages": {
+    "message": "ภาษาที่นำเข้าแล้ว"
+  },
+  "importedLanguagesEmpty": {
+    "message": "ไม่มีภาษาที่นำเข้า"
+  },
+  "languageProgress": {
+    "message": "$1 จาก $2 ข้อความ"
+  },
+  "languageImportDone": {
+    "message": "นำเข้า $1 แล้ว: แปลแล้ว $2 จาก $3 ข้อความ"
+  },
+  "languageImportIgnored": {
+    "message": "ข้ามข้อความที่ไม่รู้จัก $1 รายการ"
+  },
+  "languageImportPlaceholders": {
+    "message": "ตัวแทนที่ขาดหายไป จึงมีค่าหนึ่งที่จะไม่แสดง: $1"
+  },
+  "languageImportInvalid": {
+    "message": "นี่ไม่ใช่ไฟล์ภาษาของ PriceHover"
+  },
+  "languageImportTooLarge": {
+    "message": "ไฟล์นี้ใหญ่เกินไป"
+  },
+  "languageReplaceConfirm": {
+    "message": "นำเข้า $1 ไว้แล้ว ต้องการแทนที่หรือไม่"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover พร้อมใช้งานแล้ว"
+  },
+  "welcomeBody": {
+    "message": "เลือกสกุลเงินของคุณ แล้ววางเมาส์เหนือราคา"
+  },
+  "welcomeDismiss": {
+    "message": "เข้าใจแล้ว"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover ยังอ่านหน้าเว็บไม่ได้"
+  },
+  "pageAccessBody": {
+    "message": "เบราว์เซอร์ยังไม่ให้สิทธิ์เข้าถึงเว็บไซต์ที่คุณเข้าชม จึงตรวจไม่พบราคาที่ไหนเลย โปรดอนุญาต แล้วโหลดแท็บที่เปิดอยู่ใหม่"
+  },
+  "pageAccessGrant": {
+    "message": "อนุญาตบนทุกเว็บไซต์"
+  }
+}

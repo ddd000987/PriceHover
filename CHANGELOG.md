@@ -1,5 +1,42 @@
 # Changelog
 
+## 2.2.0.1 (fork)
+
+Based on [klNuno/PriceHover](https://github.com/klNuno/PriceHover) 2.2.0. The
+fourth number counts this fork's own releases on top of the original's version.
+
+### Chrome only
+
+The Firefox build is gone: its manifest block, the `build:firefox` and
+`zip:firefox` scripts, and the Firefox and sources zips in the release. The
+Chrome build runs in Edge and other Chromium browsers as before. Links in the
+settings page, README and PRIVACY.md now point at this fork's repository.
+
+### Pick the interface language, or bring your own
+
+`chrome.i18n` always follows the browser's language and offers no way to pick
+another, so the settings page now has a **Language** section that does. The
+choice is resolved into one table in storage, English underneath, and `t()`
+reads it in every context, the content script included. *Browser language*
+keeps the old behaviour exactly.
+
+Languages can be added without a build: **Export** writes the selected language
+as JSON, **Import** reads a translated file back. Imported files are checked
+before they are stored: known keys only, strings only, bounded sizes, and a
+warning for any translation that dropped a `$1`.
+
+Ten more bundled languages: zh_TW, ko, ru, nl, pl, tr, uk, id, vi and th, which
+the browser's own language setting picks up too. Numbers are formatted in the
+chosen language.
+
+### A price in a target currency opens the tooltip too
+
+Only prices in your own currency are left alone now. A price in one of the
+*Convert to* currencies used to be skipped as well, which made it impossible to
+see a US price in your currency while also keeping USD in the list for every
+other price. The row the price is already in is still left out of the tooltip.
+Inline mode always worked this way, so hover, selection and inline now agree.
+
 ## 2.2.0
 
 ### The extension ran on one tab at a time, and only after a click

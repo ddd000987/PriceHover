@@ -1,15 +1,13 @@
 {
   "name": "pricehover",
-  "version": "2.2.0",
+  "version": "2.2.0.1",
   "description": "Browser extension that converts prices on hover",
   "license": "GPL-3.0-or-later",
   "private": true,
   "scripts": {
     "dev": "wxt",
     "build": "wxt build",
-    "build:firefox": "wxt build --browser firefox",
     "zip": "wxt zip",
-    "zip:firefox": "wxt zip --browser firefox",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
     "icons": "bun run scripts/gen-icons.ts",

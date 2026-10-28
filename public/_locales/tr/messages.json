@@ -1,0 +1,326 @@
+{
+  "extName": {
+    "message": "PriceHover"
+  },
+  "extDescription": {
+    "message": "Herhangi bir sayfadaki fiyatın üzerine gelin, kendi para biriminizde görün."
+  },
+  "searchPlaceholder": {
+    "message": "Ara veya fiyat yaz…"
+  },
+  "searchLabel": {
+    "message": "Para birimlerini ara"
+  },
+  "noResults": {
+    "message": "Sonuç yok"
+  },
+  "baseCurrency": {
+    "message": "Para biriminiz"
+  },
+  "baseCurrencyHelp": {
+    "message": "Zaten bu para biriminde olan fiyatlara dokunulmaz."
+  },
+  "convertTo": {
+    "message": "Şuna çevir"
+  },
+  "convertToHelp": {
+    "message": "Araç ipucunda, kendi para biriminizin altında gösterilir."
+  },
+  "settings": {
+    "message": "Ayarlar"
+  },
+  "cryptoEnabled": {
+    "message": "Bitcoin ve diğer kripto paralar"
+  },
+  "cryptoEnabledHelp": {
+    "message": "24 varlık ekler. Kurlar api.coingecko.com adresinden gelir; yalnızca bu açıkken saatte bir bağlanılır."
+  },
+  "cryptoDenied": {
+    "message": "api.coingecko.com erişimi olmadan kripto kapalı kalır."
+  },
+  "ratesUpdated": {
+    "message": "Kurlar $1"
+  },
+  "ratesNever": {
+    "message": "Kurlar yüklenmedi"
+  },
+  "cryptoRatesUpdated": {
+    "message": "Kripto $1"
+  },
+  "cryptoRatesNever": {
+    "message": "Kripto kurları yüklenmedi"
+  },
+  "ratesStale": {
+    "message": "Kurlar güncel olmayabilir"
+  },
+  "refresh": {
+    "message": "Yenile"
+  },
+  "refreshing": {
+    "message": "Yenileniyor…"
+  },
+  "refreshFailed": {
+    "message": "Yenileme başarısız"
+  },
+  "saveFailed": {
+    "message": "Değişikliğiniz kaydedilemedi."
+  },
+  "loadFailed": {
+    "message": "Ayarlarınız okunamadı, bu yüzden hiçbir şey kaydedilmeyecek. Biraz sonra tekrar deneyin."
+  },
+  "timeJustNow": {
+    "message": "az önce"
+  },
+  "timeMinutes": {
+    "message": "$1 dk önce"
+  },
+  "timeHours": {
+    "message": "$1 sa önce"
+  },
+  "timeDays": {
+    "message": "$1 g önce"
+  },
+  "tooltipNoCurrencies": {
+    "message": "Para birimi seçilmedi"
+  },
+  "tooltipChooseCurrencies": {
+    "message": "Ayarları aç"
+  },
+  "tooltipInferred": {
+    "message": "Para birimi fiyattan değil, siteden okundu"
+  },
+  "tooltipCopyHint": {
+    "message": "Kopyalamak için tıklayın"
+  },
+  "tooltipCopied": {
+    "message": "Kopyalandı"
+  },
+  "extensionOff": {
+    "message": "PriceHover kapalı"
+  },
+  "turnOn": {
+    "message": "Aç"
+  },
+  "pauseOnSite": {
+    "message": "$1 sitesinde duraklat"
+  },
+  "resumeOnSite": {
+    "message": "$1 sitesinde sürdür"
+  },
+  "pausedOnSite": {
+    "message": "$1 sitesinde duraklatıldı"
+  },
+  "optionsTitle": {
+    "message": "PriceHover ayarları"
+  },
+  "sectionCurrencies": {
+    "message": "Para birimleri"
+  },
+  "sectionBehaviour": {
+    "message": "Davranış"
+  },
+  "sectionSites": {
+    "message": "Siteler"
+  },
+  "sectionAbout": {
+    "message": "Hakkında"
+  },
+  "hoverDelay": {
+    "message": "Üzerine gelme gecikmesi"
+  },
+  "hoverDelayHelp": {
+    "message": "Araç ipucu açılmadan önce imlecin durması gereken süre. Daha uzun süre, daha az yanıp sönme demektir."
+  },
+  "delayInstant": {
+    "message": "Anında"
+  },
+  "rounding": {
+    "message": "Yuvarlama"
+  },
+  "roundingHelp": {
+    "message": "Çevrilen fiyat bir tahmindir. Daha az basamak bunu belli eder."
+  },
+  "roundingExact": {
+    "message": "Tam"
+  },
+  "roundingSmart": {
+    "message": "Akıllı"
+  },
+  "roundingInteger": {
+    "message": "Tam sayılar"
+  },
+  "inlineMode": {
+    "message": "Sayfadaki fiyatları yeniden yaz"
+  },
+  "inlineModeHelp": {
+    "message": "Her fiyatın yanında kendi para biriminiz, üzerine gelmeye gerek yok. Üzerine gelince liste yine açılır."
+  },
+  "inlineStyle": {
+    "message": "Sayfada göster"
+  },
+  "inlineStyleHelp": {
+    "message": "Değiştirme, sitenin fiyatını silmeden gizler. Üzerine gelince yeniden görünür."
+  },
+  "inlineStyleBadge": {
+    "message": "İki fiyat"
+  },
+  "inlineStyleReplace": {
+    "message": "Yalnızca benimki"
+  },
+  "pageContext": {
+    "message": "$$, kr ve ¥ simgelerini siteden oku"
+  },
+  "pageContextHelp": {
+    "message": ".ca sitelerinde $$ Kanada dolarıdır. Para birimini belirten (CNY, CAD) bir tablo satırına ya da sayfaya güvenilir ve sayfa site için hatırlanır. Kapalıyken yalnızca sabitlemeleriniz geçerlidir."
+  },
+  "enabledEverywhere": {
+    "message": "Etkin"
+  },
+  "enabledEverywhereHelp": {
+    "message": "Kapalıysa PriceHover hiçbir sayfada bir şey yapmaz."
+  },
+  "pausedSites": {
+    "message": "Duraklatılan siteler"
+  },
+  "pausedSitesEmpty": {
+    "message": "Duraklatılan site yok."
+  },
+  "addSitePlaceholder": {
+    "message": "example.com"
+  },
+  "add": {
+    "message": "Ekle"
+  },
+  "remove": {
+    "message": "Kaldır"
+  },
+  "moveUp": {
+    "message": "Yukarı taşı"
+  },
+  "moveDown": {
+    "message": "Aşağı taşı"
+  },
+  "invalidSite": {
+    "message": "Bu bir site adresi değil. example.com deneyin."
+  },
+  "siteAction": {
+    "message": "Bu sitede"
+  },
+  "siteActionPause": {
+    "message": "Duraklat"
+  },
+  "siteActionLock": {
+    "message": "Para birimini sabitle"
+  },
+  "siteLockCurrency": {
+    "message": "$$, kr veya ¥ için para birimi"
+  },
+  "lockedSites": {
+    "message": "Sabitlenen para birimleri"
+  },
+  "lockedSitesHelp": {
+    "message": "Bu sitelerde simge, sayfa ne önerirse önersin her zaman seçtiğiniz para birimi anlamına gelir."
+  },
+  "lockedSitesEmpty": {
+    "message": "Sabitlenmiş para birimi yok."
+  },
+  "learnedSites": {
+    "message": "Sitelerden okunanlar"
+  },
+  "learnedSitesHelp": {
+    "message": "Sitenin kendi sayfalarında belirtilen para birimi, yalnızca bu cihazda hatırlanır. Alan adı ve sabitlemeleriniz önceliklidir."
+  },
+  "learnedSitesEmpty": {
+    "message": "Henüz bir şey okunmadı."
+  },
+  "reset": {
+    "message": "Varsayılana sıfırla"
+  },
+  "resetWarning": {
+    "message": "Bu, duraklatılan ve sabitlenen siteleriniz ile sitelerden öğrenilenler dahil tüm ayarları siler. Geri alınamaz."
+  },
+  "resetConfirm": {
+    "message": "Sıfırlamayı onayla"
+  },
+  "resetCancel": {
+    "message": "İptal"
+  },
+  "version": {
+    "message": "Sürüm $1"
+  },
+  "privacyPolicy": {
+    "message": "Gizlilik politikası"
+  },
+  "privacyNote": {
+    "message": "Kurlar için tek ana makine: open.er-api.com. Gezdikleriniz tarayıcınızdan çıkmaz."
+  },
+  "sectionLanguage": {
+    "message": "Dil"
+  },
+  "uiLanguage": {
+    "message": "Arayüz dili"
+  },
+  "uiLanguageHelp": {
+    "message": "Sayılar da bu dile göre yazılır. Tarayıcının kendi menüleri tarayıcının dilinde kalır."
+  },
+  "uiLanguageAuto": {
+    "message": "Tarayıcı dili"
+  },
+  "uiLanguageImported": {
+    "message": "$1 (içe aktarıldı)"
+  },
+  "languageFilesHelp": {
+    "message": "Bir dili JSON dosyası olarak dışa aktarın, çevirin, sonra buraya içe aktarın. Eksik metinler İngilizce kalır."
+  },
+  "languageExport": {
+    "message": "Dışa aktar: $1"
+  },
+  "languageImport": {
+    "message": "İçe aktar…"
+  },
+  "importedLanguages": {
+    "message": "İçe aktarılan diller"
+  },
+  "importedLanguagesEmpty": {
+    "message": "İçe aktarılan dil yok"
+  },
+  "languageProgress": {
+    "message": "Metin: $1 / $2"
+  },
+  "languageImportDone": {
+    "message": "$1 içe aktarıldı. Çevrilen metin: $2 / $3."
+  },
+  "languageImportIgnored": {
+    "message": "Yok sayılan bilinmeyen metin: $1."
+  },
+  "languageImportPlaceholders": {
+    "message": "Bir yer tutucu eksik, bu yüzden bir değer gösterilmeyecek: $1"
+  },
+  "languageImportInvalid": {
+    "message": "Bu bir PriceHover dil dosyası değil."
+  },
+  "languageImportTooLarge": {
+    "message": "Bu dosya çok büyük."
+  },
+  "languageReplaceConfirm": {
+    "message": "$1 zaten içe aktarılmış. Değiştirilsin mi?"
+  },
+  "welcomeTitle": {
+    "message": "PriceHover hazır"
+  },
+  "welcomeBody": {
+    "message": "Para biriminizi seçin, sonra bir fiyatın üzerine gelin."
+  },
+  "welcomeDismiss": {
+    "message": "Anladım"
+  },
+  "pageAccessTitle": {
+    "message": "PriceHover henüz sayfaları okuyamıyor"
+  },
+  "pageAccessBody": {
+    "message": "Tarayıcınız ziyaret ettiğiniz sitelere erişimi tutuyor, bu yüzden hiçbir yerde fiyat algılanmıyor. Erişime izin verin, sonra açık sekmeleri yeniden yükleyin."
+  },
+  "pageAccessGrant": {
+    "message": "Tüm sitelerde izin ver"
+  }
+}

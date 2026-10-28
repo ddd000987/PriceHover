@@ -10,7 +10,12 @@
     watchCryptoRevoked,
   } from '../../src/permissions';
   import { formatCurrencyAmount } from '../../src/formatter';
-  import { t, uiLocale } from '../../src/i18n';
+  import { activeLanguageId, t, uiLocale } from '../../src/i18n';
+  import {
+    BUILTIN_LANGUAGES, CUSTOM_PREFIX, MAX_PACK_BYTES, applyLanguage, exportLanguageFile, languageName,
+    loadEnglish, parseLanguagePack, readCustomLanguages, removeCustomLanguage, saveCustomLanguage,
+  } from '../../src/languages';
+  import type { CustomLanguages } from '../../src/languages';
   import { MESSAGE, send } from '../../src/messages';
   import type { RefreshResult } from '../../src/messages';
   import {
@@ -50,13 +55,41 @@
   /** False until a read actually succeeded: writing before that persists defaults over real data. */
   let canSave = $state(false);
 
+  /** Imported language packs, by code. */
+  let customLanguages = $state<CustomLanguages>({});
+  /** Keys a complete translation has, for the progress shown beside each pack. */
+  let englishKeys = $state<string[]>([]);
+  let languageNotice = $state<string[]>([]);
+  let languageError = $state('');
+  let packInput: HTMLInputElement | undefined = $state();
+
+  /**
+   * `t()` is not reactive: the page is rendered in whatever language main.ts
+   * loaded, and a different one takes a reload. `syncedLanguage` is the last
+   * choice handed to `applyLanguage`, so a settings write that did not touch
+   * the language does not rebuild the table.
+   */
+  const renderedLanguage = activeLanguageId();
+  let syncedLanguage = renderedLanguage;
+
+  function syncLanguage(id: string): void {
+    if (id === syncedLanguage) return;
+    syncedLanguage = id;
+    applyLanguage()
+      // Compared with what is on screen, not with `id`: a choice that resolves
+      // to nothing (a pack removed elsewhere) falls back to the browser, and
+      // reloading into the same fallback would loop.
+      .then((next) => { if ((next?.id ?? 'auto') !== renderedLanguage) location.reload(); })
+      .catch((e) => console.error('[PH] language not applied', e));
+  }
+
   const version = chrome.runtime.getManifest().version;
   let unwatch: (() => void) | null = null;
   let unwatchRates: (() => void) | null = null;
   let unwatchHints: (() => void) | null = null;
 
   onMount(async () => {
-    // The page ships in eight locales, so the document language cannot be a
+    // The UI can be in any language, picked or imported, so the document language cannot be a
     // constant in the HTML.
     document.documentElement.lang = uiLocale();
 
@@ -79,6 +112,8 @@
         settings = next;
         canSave = true;
         if (error === t('loadFailed')) error = '';
+        // A reset, or another options tab, changes the language too.
+        syncLanguage(next.uiLanguage);
       });
       // This tab outlives a background refresh, so the rates labels cannot be
       // read once and left.
@@ -99,6 +134,16 @@
       if (!canSave) error = t('loadFailed');
     }
     loaded = true;
+    // The resolved table can lag the choice: an extension update the
+    // background has not caught up with, or a pack removed in another tab.
+    if (load.source !== 'failed') syncLanguage(settings.uiLanguage);
+
+    try {
+      customLanguages = await readCustomLanguages();
+      englishKeys = Object.keys((await loadEnglish()) ?? {});
+    } catch (e) {
+      console.error('[PH] language packs read failed', e);
+    }
 
     try {
       const stored = await chrome.storage.local.get([
@@ -353,6 +398,93 @@
     error = '';
     cryptoTimestamp = result.timestamp ?? Date.now();
   }
+
+  /** Saved first, applied once storage has it. The watcher would get there too; this does not wait on it. */
+  function setLanguage(select: HTMLSelectElement): void {
+    void update({ uiLanguage: select.value }, () => { select.value = settings.uiLanguage; })
+      .then(() => syncLanguage(settings.uiLanguage));
+  }
+
+  /**
+   * A plain blob link, not `chrome.downloads`: that is one more permission for
+   * one button, and a link the user clicked downloads without it.
+   */
+  async function exportLanguage(): Promise<void> {
+    languageError = '';
+    const file = await exportLanguageFile(settings.uiLanguage, version);
+    if (!file) { languageError = t('loadFailed'); return; }
+
+    const url = URL.createObjectURL(new Blob([file.text], { type: 'application/json' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = file.filename;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  /**
+   * Reads, checks, stores. Re-importing the pack in use rebuilds the resolved
+   * table for every other context but does not reload this page, so the
+   * warnings below stay readable while the translator fixes the file.
+   */
+  async function importLanguage(input: HTMLInputElement): Promise<void> {
+    const file = input.files?.[0];
+    input.value = ''; // the same file picked twice in a row must fire again
+    languageNotice = [];
+    languageError = '';
+    if (!file) return;
+    if (file.size > MAX_PACK_BYTES) { languageError = t('languageImportTooLarge'); return; }
+
+    const english = await loadEnglish();
+    if (!english) { languageError = t('loadFailed'); return; }
+
+    let raw: unknown;
+    try {
+      raw = JSON.parse(await file.text());
+    } catch {
+      languageError = t('languageImportInvalid');
+      return;
+    }
+    const parsed = parseLanguagePack(raw, english);
+    if (parsed === 'invalid') { languageError = t('languageImportInvalid'); return; }
+
+    const { pack, ignored, brokenPlaceholders } = parsed;
+    if (customLanguages[pack.code] && !confirm(t('languageReplaceConfirm', pack.name))) return;
+
+    try {
+      await saveCustomLanguage(pack);
+      customLanguages = await readCustomLanguages();
+      if (settings.uiLanguage === CUSTOM_PREFIX + pack.code) await applyLanguage();
+    } catch (e) {
+      console.error('[PH] language pack not saved', e);
+      languageError = t('saveFailed');
+      return;
+    }
+
+    const notice = [t('languageImportDone', [pack.name, String(Object.keys(pack.messages).length), String(englishKeys.length)])];
+    if (ignored) notice.push(t('languageImportIgnored', String(ignored)));
+    if (brokenPlaceholders.length) notice.push(t('languageImportPlaceholders', brokenPlaceholders.join(', ')));
+    languageNotice = notice;
+  }
+
+  /** The pack goes first, then the choice: the reload that follows must not find it again. */
+  async function removeLanguage(code: string): Promise<void> {
+    languageNotice = [];
+    languageError = '';
+    try {
+      await removeCustomLanguage(code);
+      customLanguages = await readCustomLanguages();
+    } catch (e) {
+      console.error('[PH] language pack not removed', e);
+      languageError = t('saveFailed');
+      return;
+    }
+    if (settings.uiLanguage === CUSTOM_PREFIX + code) await update({ uiLanguage: 'auto' });
+  }
+
+  const customList = $derived(
+    Object.values(customLanguages).sort((a, b) => a.name.localeCompare(b.name))
+  );
 
   /** Two steps on purpose: one stray click used to take the whole paused-site list with it. */
   function confirmReset(): void {
@@ -761,6 +893,69 @@
     </section>
 
     <section>
+      <h2>{t('sectionLanguage')}</h2>
+
+      <div class="field">
+        <label for="ui-language">{t('uiLanguage')}</label>
+        <p class="help">{t('uiLanguageHelp')}</p>
+        <div class="select-row">
+          <select id="ui-language" value={settings.uiLanguage} onchange={(e) => setLanguage(e.currentTarget)}>
+            <option value="auto">{t('uiLanguageAuto')}</option>
+            {#each BUILTIN_LANGUAGES as language (language.code)}
+              <option value={language.code}>{language.name}</option>
+            {/each}
+            {#each customList as pack (pack.code)}
+              <option value={CUSTOM_PREFIX + pack.code}>{t('uiLanguageImported', pack.name)}</option>
+            {/each}
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="label">{t('importedLanguages')}</span>
+        <p class="help">{t('languageFilesHelp')}</p>
+        <ul class="sites">
+          {#each customList as pack (pack.code)}
+            <li>
+              <span class="code">{pack.code}</span>
+              <span class="host">{pack.name}</span>
+              <span class="lock">{t('languageProgress', [
+                String(englishKeys.filter((key) => Object.hasOwn(pack.messages, key)).length),
+                String(englishKeys.length),
+              ])}</span>
+              <button
+                class="icon" type="button"
+                title={t('remove')} aria-label={`${t('remove')}: ${pack.name}`}
+                onclick={() => removeLanguage(pack.code)}
+              ><span aria-hidden="true">✕</span></button>
+            </li>
+          {:else}
+            <li class="muted">{t('importedLanguagesEmpty')}</li>
+          {/each}
+        </ul>
+        <div class="language-actions">
+          <button type="button" onclick={exportLanguage}>
+            {t('languageExport', languageName(settings.uiLanguage, customLanguages))}
+          </button>
+          <button type="button" onclick={() => packInput?.click()}>{t('languageImport')}</button>
+          <input
+            type="file" accept=".json,application/json" hidden
+            bind:this={packInput}
+            onchange={(e) => importLanguage(e.currentTarget)}
+          />
+        </div>
+        {#if languageNotice.length}
+          <div class="language-notice" role="status">
+            {#each languageNotice as line, index (index)}<p>{line}</p>{/each}
+          </div>
+        {/if}
+        {#if languageError}
+          <p class="field-error" role="alert">{languageError}</p>
+        {/if}
+      </div>
+    </section>
+
+    <section>
       <h2>{t('sectionAbout')}</h2>
       <div class="rates-row">
         <span class:warn={stale}>{ratesLabel}</span>
@@ -781,7 +976,7 @@
       {/if}
       <p class="help">{t('privacyNote')}</p>
       <p>
-        <a href="https://klnuno.github.io/PriceHover/PRIVACY" target="_blank" rel="noreferrer">
+        <a href="https://github.com/ddd000987/PriceHover/blob/main/PRIVACY.md" target="_blank" rel="noreferrer">
           {t('privacyPolicy')}
         </a>
       </p>
@@ -1045,6 +1240,14 @@
   .list-label { margin-top: 18px; }
   .lock { font-weight: 650; font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .field-error { margin-top: 8px; font-size: 12.5px; color: var(--danger); }
+
+  .language-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .language-notice {
+    margin-top: 10px; padding: 8px 11px;
+    border: 1px solid var(--border); border-radius: var(--radius-sm);
+    background: var(--surface2); font-size: 12.5px; color: var(--fg2);
+    overflow-wrap: anywhere;
+  }
 
   .reset-warning { margin-top: 14px; font-size: 12.5px; color: var(--danger); }
   .reset-row { display: flex; gap: 8px; margin-top: 14px; }
